@@ -1,0 +1,6 @@
+All files are stored here: 
+"\\valueoptions.fhc1.net\files\COS\COSGroupShares\Shared\Departments\IT\InpatientDataEQHealth"
+
+Each RAE has its own SSIS package that loops through all files that reside in that RAEs ROOT folder indicated above.(Example: "\\valueoptions.fhc1.net\files\COS\COSGroupShares\Shared\Departments\IT\InpatientDataEQHealth\R2")
+
+The ssis package will spin through everything and add the file name to the end of the row.

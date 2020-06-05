@@ -1,0 +1,8 @@
+open sftp://corae2:Fy92U%21R%5Ebkn@la-ftp.eqhs.org/ -hostkey="ssh-rsa 1024 LkC+Z6ieQ/chsBRTiHQMBtbCXqt7sAnNO7ShORyMu/g="
+
+synchronize local "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2" /Inpatient
+
+exit
+
+# Execute the script using a command like:
+# "C:\Users\Jhernan0\AppData\Local\WinSCP\WinSCP.exe" /log="C:\writable\path\to\log\WinSCP.log" /ini=nul /script="C:\path\to\script\script.txt"

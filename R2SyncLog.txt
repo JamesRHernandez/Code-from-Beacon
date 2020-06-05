@@ -1,0 +1,1314 @@
+. 2019-09-18 09:30:11.133 --------------------------------------------------------------------------
+. 2019-09-18 09:30:11.133 WinSCP Version 5.15.4 (Build 9849) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-09-18 09:30:11.133 Configuration: nul
+. 2019-09-18 09:30:11.133 Log level: Normal
+. 2019-09-18 09:30:11.133 Local account: BEACON\jhernan0
+. 2019-09-18 09:30:11.133 Working directory: H:\
+. 2019-09-18 09:30:11.133 Process ID: 15380
+. 2019-09-18 09:30:11.134 Command-line: "C:\Users\Jhernan0\AppData\Local\WinSCP\WinSCP.exe" /console=5.15.4 /consoleinstance=_19008_929 "/log=C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2SyncLog.txt" "/ini=nul" "/script=C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2Sync.txt" 
+. 2019-09-18 09:30:11.134 Time zone: Current: GMT-6, Standard: GMT-7 (Mountain Standard Time), DST: GMT-6 (Mountain Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-09-18 09:30:11.134 Login time: Wednesday, September 18, 2019 9:30:11 AM
+. 2019-09-18 09:30:11.134 --------------------------------------------------------------------------
+. 2019-09-18 09:30:11.134 Script: Retrospectively logging previous script records:
+> 2019-09-18 09:30:11.134 Script: open sftp://corae2:***@la-ftp.eqhs.org/ -hostkey="ssh-rsa 1024 LkC+Z6ieQ/chsBRTiHQMBtbCXqt7sAnNO7ShORyMu/g="
+. 2019-09-18 09:30:11.134 --------------------------------------------------------------------------
+. 2019-09-18 09:30:11.134 Session name: corae2@la-ftp.eqhs.org (Ad-Hoc site)
+. 2019-09-18 09:30:11.134 Host name: la-ftp.eqhs.org (Port: 22)
+. 2019-09-18 09:30:11.134 User name: corae2 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-09-18 09:30:11.134 Tunnel: No
+. 2019-09-18 09:30:11.134 Transfer Protocol: SFTP
+. 2019-09-18 09:30:11.134 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-09-18 09:30:11.134 Disable Nagle: No
+. 2019-09-18 09:30:11.134 Proxy: None
+. 2019-09-18 09:30:11.134 Send buffer: 262144
+. 2019-09-18 09:30:11.134 SSH protocol version: 2; Compression: No
+. 2019-09-18 09:30:11.134 Bypass authentication: No
+. 2019-09-18 09:30:11.134 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-09-18 09:30:11.134 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-09-18 09:30:11.134 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-09-18 09:30:11.134 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-09-18 09:30:11.134 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-09-18 09:30:11.134 Simple channel: Yes
+. 2019-09-18 09:30:11.134 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-09-18 09:30:11.134 Shell: default
+. 2019-09-18 09:30:11.134 EOL: LF, UTF: Auto
+. 2019-09-18 09:30:11.134 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-09-18 09:30:11.134 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-09-18 09:30:11.134 SFTP Bugs: Auto,Auto
+. 2019-09-18 09:30:11.134 SFTP Server: default
+. 2019-09-18 09:30:11.134 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-09-18 09:30:11.134 Cache directory changes: Yes, Permanent: Yes
+. 2019-09-18 09:30:11.134 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-09-18 09:30:11.134 DST mode: Unix
+. 2019-09-18 09:30:11.134 --------------------------------------------------------------------------
+. 2019-09-18 09:30:11.134 Looking up host "la-ftp.eqhs.org" for SSH connection
+. 2019-09-18 09:30:11.139 Connecting to 69.2.34.241 port 22
+. 2019-09-18 09:30:11.328 We claim version: SSH-2.0-WinSCP_release_5.15.4
+. 2019-09-18 09:30:11.461 Server version: SSH-2.0-WS_FTP-SSH_8.6.0.1027
+. 2019-09-18 09:30:11.461 Using SSH protocol version 2
+. 2019-09-18 09:30:11.462 Have a known host key of type rsa2
+. 2019-09-18 09:30:11.663 Using Diffie-Hellman with standard group "group14"
+. 2019-09-18 09:30:11.664 Doing Diffie-Hellman key exchange with hash SHA-1
+. 2019-09-18 09:30:12.074 Server also has ssh-dss host key, but we don't know it
+. 2019-09-18 09:30:12.075 Host key fingerprint is:
+. 2019-09-18 09:30:12.075 ssh-rsa 1024 c3:ca:5f:c8:0a:9b:f5:72:be:61:29:e7:bf:88:c3:b1 LkC+Z6ieQ/chsBRTiHQMBtbCXqt7sAnNO7ShORyMu/g=
+. 2019-09-18 09:30:12.075 Host key matches configured key
+. 2019-09-18 09:30:12.075 Initialised AES-256 CBC client->server encryption
+. 2019-09-18 09:30:12.076 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-09-18 09:30:12.323 Initialised AES-256 CBC server->client encryption
+. 2019-09-18 09:30:12.323 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-09-18 09:30:12.779 Using username "corae2".
+. 2019-09-18 09:30:13.132 Server offered these authentication methods: publickey,password
+. 2019-09-18 09:30:13.132 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-09-18 09:30:13.132 Using stored password.
+. 2019-09-18 09:30:13.133 Sent password
+. 2019-09-18 09:30:13.441 Access granted
+. 2019-09-18 09:30:13.441 Opening session as main channel
+. 2019-09-18 09:30:13.568 Opened main channel
+. 2019-09-18 09:30:13.867 Started a shell/command
+. 2019-09-18 09:30:13.868 --------------------------------------------------------------------------
+. 2019-09-18 09:30:13.868 Using SFTP protocol.
+. 2019-09-18 09:30:13.868 Doing startup conversation with host.
+> 2019-09-18 09:30:13.869 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-09-18 09:30:14.013 Type: SSH_FXP_VERSION, Size: 5, Number: -1
+. 2019-09-18 09:30:14.013 SFTP version 4 negotiated.
+. 2019-09-18 09:30:14.013 We will use UTF-8 strings as it is mandatory with SFTP version 4 and newer
+. 2019-09-18 09:30:14.013 Getting current directory name.
+. 2019-09-18 09:30:14.013 Getting real path for '.'
+> 2019-09-18 09:30:14.013 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-09-18 09:30:14.139 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-09-18 09:30:14.139 Real path is '/'
+. 2019-09-18 09:30:14.139 Startup conversation with host finished.
+< 2019-09-18 09:30:14.139 Script: Active session: [1] corae2@la-ftp.eqhs.org
+> 2019-09-18 09:30:14.143 Script: synchronize local "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2" /Inpatient
+< 2019-09-18 09:30:14.143 Script: Comparing...
+. 2019-09-18 09:30:14.144 Collecting synchronization list for local directory 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2' and remote directory '/Inpatient', mode = Local, params = 0x2 (NoConfirmation), file mask = ''
+. 2019-09-18 09:30:14.145 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\.' [2019-09-18T15:29:19.111Z] [0] excluded from synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\..' [2019-09-18T15:29:19.111Z] [0] excluded from synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08232019_0708_1.txt' [2019-08-23T12:59:42.000Z] [15510] included to synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08232019_1808_1.txt' [2019-08-23T23:20:32.000Z] [6510] included to synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08262019_1808_1.txt' [2019-08-26T23:21:10.000Z] [13635] included to synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08272019_1808_1.txt' [2019-08-27T23:21:36.000Z] [4343] included to synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08282019_1808_1.txt' [2019-08-28T23:22:25.000Z] [13525] included to synchronization
+. 2019-09-18 09:30:14.146 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08292019_1808_1.txt' [2019-08-29T23:22:04.000Z] [8987] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08302019_1808_1.txt' [2019-08-30T23:22:36.000Z] [13374] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09022019_1809_1.txt' [2019-09-02T23:21:34.000Z] [4952] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09032019_1809_1.txt' [2019-09-03T23:02:04.000Z] [2141] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09042019_1809_1.txt' [2019-09-04T23:01:51.000Z] [4965] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09052019_1809_1.txt' [2019-09-05T23:02:09.000Z] [5063] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09062019_1809_1.txt' [2019-09-06T23:02:11.000Z] [3551] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09092019_1809_1.txt' [2019-09-09T23:02:36.000Z] [5220] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09102019_1809_1.txt' [2019-09-10T23:21:44.000Z] [15864] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09112019_1809_1.txt' [2019-09-11T23:22:56.000Z] [14311] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09122019_1809_1.txt' [2019-09-12T23:22:41.000Z] [12248] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09132019_1809_1.txt' [2019-09-13T23:22:32.000Z] [6395] included to synchronization
+. 2019-09-18 09:30:14.147 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09162019_1809_1.txt' [2019-09-16T23:22:06.000Z] [15378] included to synchronization
+. 2019-09-18 09:30:14.148 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09172019_1809_1.txt' [2019-09-17T23:22:14.000Z] [6040] included to synchronization
+. 2019-09-18 09:30:14.148 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Archive' [2019-05-31T22:49:31.993Z] [0] included to synchronization
+. 2019-09-18 09:30:14.148 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Log' [2019-09-17T21:25:15.050Z] [0] included to synchronization
+. 2019-09-18 09:30:14.148 Listing directory "/Inpatient".
+> 2019-09-18 09:30:14.148 Type: SSH_FXP_OPENDIR, Size: 19, Number: 267
+< 2019-09-18 09:30:14.274 Type: SSH_FXP_HANDLE, Size: 12, Number: 267
+> 2019-09-18 09:30:14.275 Type: SSH_FXP_READDIR, Size: 12, Number: 524
+< 2019-09-18 09:30:14.395 Type: SSH_FXP_NAME, Size: 1492, Number: 524
+> 2019-09-18 09:30:14.395 Type: SSH_FXP_READDIR, Size: 12, Number: 780
+< 2019-09-18 09:30:14.493 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2019-09-18 09:30:14.493 Status code: 1
+> 2019-09-18 09:30:14.493 Type: SSH_FXP_CLOSE, Size: 12, Number: 1028
+. 2019-09-18 09:30:14.493 .;D;0;2019-09-17T23:22:13.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.493 ..;D;0;2019-04-11T20:29:09.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08232019_0708_1.txt;-;15510;2019-08-23T12:59:42.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08232019_1808_1.txt;-;6510;2019-08-23T23:20:32.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08262019_1808_1.txt;-;13635;2019-08-26T23:21:10.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08272019_1808_1.txt;-;4343;2019-08-27T23:21:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08282019_1808_1.txt;-;13525;2019-08-28T23:22:25.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08292019_1808_1.txt;-;8987;2019-08-29T23:22:04.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__08302019_1808_1.txt;-;13374;2019-08-30T23:22:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09022019_1809_1.txt;-;4952;2019-09-02T23:21:34.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09032019_1809_1.txt;-;2141;2019-09-03T23:02:04.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09042019_1809_1.txt;-;4965;2019-09-04T23:01:51.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09052019_1809_1.txt;-;5063;2019-09-05T23:02:09.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09062019_1809_1.txt;-;3551;2019-09-06T23:02:11.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09092019_1809_1.txt;-;5220;2019-09-09T23:02:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09102019_1809_1.txt;-;15864;2019-09-10T23:21:44.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09112019_1809_1.txt;-;14311;2019-09-11T23:22:56.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09122019_1809_1.txt;-;12248;2019-09-12T23:22:41.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09132019_1809_1.txt;-;6395;2019-09-13T23:22:32.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.494 99940002__09162019_1809_1.txt;-;15378;2019-09-16T23:22:06.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.495 99940002__09172019_1809_1.txt;-;6040;2019-09-17T23:22:14.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-09-18 09:30:14.504 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Archive' [2019-05-31T22:49:31.993Z] [0] is new
+. 2019-09-18 09:30:14.504 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Log' [2019-09-17T21:25:15.050Z] [0] is new
+< 2019-09-18 09:30:14.504 Script: Nothing to synchronize.
+> 2019-09-18 09:30:14.505 Script: exit
+. 2019-09-18 09:30:14.506 Script: Exit code: 0
+. 2019-09-18 09:30:14.506 Closing connection.
+. 2019-09-18 09:30:14.506 Sending special code: 12
+. 2019-09-18 09:30:14.506 Sent EOF message
+. 2019-10-25 12:55:13.497 --------------------------------------------------------------------------
+. 2019-10-25 12:55:13.497 WinSCP Version 5.15.4 (Build 9849) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-10-25 12:55:13.497 Configuration: nul
+. 2019-10-25 12:55:13.497 Log level: Normal
+. 2019-10-25 12:55:13.501 Local account: BEACON\jhernan0
+. 2019-10-25 12:55:13.501 Working directory: C:\Users\Jhernan0\Desktop\Code Projects\InpatientData
+. 2019-10-25 12:55:13.501 Process ID: 8584
+. 2019-10-25 12:55:13.501 Command-line: "C:\Users\Jhernan0\AppData\Local\WinSCP\WinSCP.exe" /console=5.15.4 /consoleinstance=_11816_435 "/log=C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2SyncLog.txt" "/ini=nul" "/script=C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2Sync.txt" 
+. 2019-10-25 12:55:13.510 Time zone: Current: GMT-6, Standard: GMT-7 (Mountain Standard Time), DST: GMT-6 (Mountain Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-10-25 12:55:13.510 Login time: Friday, October 25, 2019 12:55:13 PM
+. 2019-10-25 12:55:13.510 --------------------------------------------------------------------------
+. 2019-10-25 12:55:13.510 Script: Retrospectively logging previous script records:
+> 2019-10-25 12:55:13.510 Script: open sftp://corae2:***@la-ftp.eqhs.org/ -hostkey="ssh-rsa 1024 LkC+Z6ieQ/chsBRTiHQMBtbCXqt7sAnNO7ShORyMu/g="
+. 2019-10-25 12:55:13.510 --------------------------------------------------------------------------
+. 2019-10-25 12:55:13.510 Session name: corae2@la-ftp.eqhs.org (Ad-Hoc site)
+. 2019-10-25 12:55:13.510 Host name: la-ftp.eqhs.org (Port: 22)
+. 2019-10-25 12:55:13.510 User name: corae2 (Password: Yes, Key file: No, Passphrase: No)
+. 2019-10-25 12:55:13.510 Tunnel: No
+. 2019-10-25 12:55:13.510 Transfer Protocol: SFTP
+. 2019-10-25 12:55:13.511 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-10-25 12:55:13.511 Disable Nagle: No
+. 2019-10-25 12:55:13.511 Proxy: None
+. 2019-10-25 12:55:13.511 Send buffer: 262144
+. 2019-10-25 12:55:13.511 SSH protocol version: 2; Compression: No
+. 2019-10-25 12:55:13.511 Bypass authentication: No
+. 2019-10-25 12:55:13.511 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-10-25 12:55:13.511 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-10-25 12:55:13.511 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-10-25 12:55:13.511 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-10-25 12:55:13.511 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-10-25 12:55:13.511 Simple channel: Yes
+. 2019-10-25 12:55:13.511 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-10-25 12:55:13.511 Shell: default
+. 2019-10-25 12:55:13.511 EOL: LF, UTF: Auto
+. 2019-10-25 12:55:13.511 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-10-25 12:55:13.511 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2019-10-25 12:55:13.511 SFTP Bugs: Auto,Auto
+. 2019-10-25 12:55:13.511 SFTP Server: default
+. 2019-10-25 12:55:13.511 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-10-25 12:55:13.511 Cache directory changes: Yes, Permanent: Yes
+. 2019-10-25 12:55:13.511 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-10-25 12:55:13.511 DST mode: Unix
+. 2019-10-25 12:55:13.511 --------------------------------------------------------------------------
+. 2019-10-25 12:55:13.511 Looking up host "la-ftp.eqhs.org" for SSH connection
+. 2019-10-25 12:55:13.517 Connecting to 69.2.34.241 port 22
+. 2019-10-25 12:55:13.606 We claim version: SSH-2.0-WinSCP_release_5.15.4
+. 2019-10-25 12:55:13.695 Server version: SSH-2.0-WS_FTP-SSH_8.6.0.1027
+. 2019-10-25 12:55:13.695 Using SSH protocol version 2
+. 2019-10-25 12:55:13.696 Have a known host key of type rsa2
+. 2019-10-25 12:55:13.823 Using Diffie-Hellman with standard group "group14"
+. 2019-10-25 12:55:13.823 Doing Diffie-Hellman key exchange with hash SHA-1
+. 2019-10-25 12:55:14.048 Server also has ssh-dss host key, but we don't know it
+. 2019-10-25 12:55:14.048 Host key fingerprint is:
+. 2019-10-25 12:55:14.048 ssh-rsa 1024 c3:ca:5f:c8:0a:9b:f5:72:be:61:29:e7:bf:88:c3:b1 LkC+Z6ieQ/chsBRTiHQMBtbCXqt7sAnNO7ShORyMu/g=
+. 2019-10-25 12:55:14.049 Host key matches configured key
+. 2019-10-25 12:55:14.049 Initialised AES-256 CBC client->server encryption
+. 2019-10-25 12:55:14.049 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-10-25 12:55:14.110 Initialised AES-256 CBC server->client encryption
+. 2019-10-25 12:55:14.110 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-10-25 12:55:14.274 Using username "corae2".
+. 2019-10-25 12:55:14.377 Server offered these authentication methods: publickey,password
+. 2019-10-25 12:55:14.377 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-10-25 12:55:14.377 Using stored password.
+. 2019-10-25 12:55:14.377 Sent password
+. 2019-10-25 12:55:14.477 Access granted
+. 2019-10-25 12:55:14.477 Opening session as main channel
+. 2019-10-25 12:55:14.566 Opened main channel
+. 2019-10-25 12:55:14.833 Started a shell/command
+. 2019-10-25 12:55:14.834 --------------------------------------------------------------------------
+. 2019-10-25 12:55:14.834 Using SFTP protocol.
+. 2019-10-25 12:55:14.834 Doing startup conversation with host.
+> 2019-10-25 12:55:14.835 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-10-25 12:55:14.923 Type: SSH_FXP_VERSION, Size: 5, Number: -1
+. 2019-10-25 12:55:14.923 SFTP version 4 negotiated.
+. 2019-10-25 12:55:14.923 We will use UTF-8 strings as it is mandatory with SFTP version 4 and newer
+. 2019-10-25 12:55:14.923 Getting current directory name.
+. 2019-10-25 12:55:14.923 Getting real path for '.'
+> 2019-10-25 12:55:14.923 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-10-25 12:55:15.060 Type: SSH_FXP_NAME, Size: 23, Number: 16
+. 2019-10-25 12:55:15.060 Real path is '/'
+. 2019-10-25 12:55:15.060 Startup conversation with host finished.
+< 2019-10-25 12:55:15.060 Script: Active session: [1] corae2@la-ftp.eqhs.org
+> 2019-10-25 12:55:15.062 Script: synchronize local "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2" /Inpatient
+< 2019-10-25 12:55:15.063 Script: Comparing...
+. 2019-10-25 12:55:15.064 Collecting synchronization list for local directory 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2' and remote directory '/Inpatient', mode = Local, params = 0x2 (NoConfirmation), file mask = ''
+. 2019-10-25 12:55:15.065 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\.' [2019-09-26T19:53:37.132Z] [0] excluded from synchronization
+. 2019-10-25 12:55:15.065 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\..' [2019-09-26T19:53:37.132Z] [0] excluded from synchronization
+. 2019-10-25 12:55:15.065 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Archive' [2019-09-26T19:53:37.132Z] [0] included to synchronization
+. 2019-10-25 12:55:15.065 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Log' [2019-09-26T19:58:04.503Z] [0] included to synchronization
+. 2019-10-25 12:55:15.065 Listing directory "/Inpatient".
+> 2019-10-25 12:55:15.065 Type: SSH_FXP_OPENDIR, Size: 19, Number: 267
+< 2019-10-25 12:55:15.177 Type: SSH_FXP_HANDLE, Size: 12, Number: 267
+> 2019-10-25 12:55:15.177 Type: SSH_FXP_READDIR, Size: 12, Number: 524
+< 2019-10-25 12:55:15.279 Type: SSH_FXP_NAME, Size: 3490, Number: 524
+> 2019-10-25 12:55:15.279 Type: SSH_FXP_READDIR, Size: 12, Number: 780
+< 2019-10-25 12:55:15.366 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2019-10-25 12:55:15.366 Status code: 1
+> 2019-10-25 12:55:15.366 Type: SSH_FXP_CLOSE, Size: 12, Number: 1028
+. 2019-10-25 12:55:15.367 .;D;0;2019-10-24T23:23:51.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 ..;D;0;2019-04-11T20:29:09.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08232019_0708_1.txt;-;15510;2019-08-23T12:59:42.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08232019_1808_1.txt;-;6510;2019-08-23T23:20:32.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08262019_1808_1.txt;-;13635;2019-08-26T23:21:10.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08272019_1808_1.txt;-;4343;2019-08-27T23:21:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08282019_1808_1.txt;-;13525;2019-08-28T23:22:25.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08292019_1808_1.txt;-;8987;2019-08-29T23:22:04.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__08302019_1808_1.txt;-;13374;2019-08-30T23:22:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__09022019_1809_1.txt;-;4952;2019-09-02T23:21:34.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__09032019_1809_1.txt;-;2141;2019-09-03T23:02:04.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__09042019_1809_1.txt;-;4965;2019-09-04T23:01:51.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.367 99940002__09052019_1809_1.txt;-;5063;2019-09-05T23:02:09.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09062019_1809_1.txt;-;3551;2019-09-06T23:02:11.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09092019_1809_1.txt;-;5220;2019-09-09T23:02:36.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09102019_1809_1.txt;-;15864;2019-09-10T23:21:44.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09112019_1809_1.txt;-;14311;2019-09-11T23:22:56.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09122019_1809_1.txt;-;12248;2019-09-12T23:22:41.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09132019_1809_1.txt;-;6395;2019-09-13T23:22:32.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09162019_1809_1.txt;-;15378;2019-09-16T23:22:06.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09172019_1809_1.txt;-;6040;2019-09-17T23:22:14.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09182019_1809_1.txt;-;16544;2019-09-18T23:22:17.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09192019_1809_1.txt;-;3621;2019-09-19T23:23:16.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09202019_1809_1.txt;-;17737;2019-09-20T23:22:40.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09232019_1809_1.txt;-;3372;2019-09-23T23:23:02.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09242019_1809_1.txt;-;15583;2019-09-24T23:22:53.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09252019_1809_1.txt;-;7586;2019-09-25T23:23:42.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09262019_1809_1.txt;-;16035;2019-09-26T23:22:41.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09272019_1809_1.txt;-;5215;2019-09-27T23:23:20.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__09302019_1809_1.txt;-;17743;2019-09-30T23:23:58.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__10012019_1810_1.txt;-;4617;2019-10-01T23:23:26.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.368 99940002__10022019_1810_1.txt;-;21403;2019-10-02T23:23:29.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10032019_1810_1.txt;-;5322;2019-10-03T23:24:12.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10042019_1810_1.txt;-;16926;2019-10-04T23:22:37.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10072019_1810_1.txt;-;7742;2019-10-07T23:24:09.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10082019_1810_1.txt;-;19343;2019-10-08T23:23:39.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10092019_1810_1.txt;-;14070;2019-10-09T23:23:33.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10102019_1810_1.txt;-;15216;2019-10-10T23:25:33.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10112019_1810_1.txt;-;9881;2019-10-11T23:23:59.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10142019_1810_1.txt;-;14180;2019-10-14T23:23:05.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10152019_1810_1.txt;-;10081;2019-10-15T23:23:07.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10162019_1810_1.txt;-;16221;2019-10-16T23:24:57.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10172019_1810_1.txt;-;10206;2019-10-17T23:23:42.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10182019_1810_1.txt;-;15747;2019-10-18T23:23:50.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10212019_1810_1.txt;-;14865;2019-10-21T23:23:40.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10222019_1810_1.txt;-;24725;2019-10-22T23:23:55.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10232019_1810_1.txt;-;14392;2019-10-23T23:23:29.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.369 99940002__10242019_1810_1.txt;-;14873;2019-10-24T23:23:52.000Z;3;"" [0];"" [0];r-x------;0
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08232019_0708_1.txt' [2019-08-23T12:59:42.000Z] [15510] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08232019_1808_1.txt' [2019-08-23T23:20:32.000Z] [6510] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08262019_1808_1.txt' [2019-08-26T23:21:10.000Z] [13635] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08272019_1808_1.txt' [2019-08-27T23:21:36.000Z] [4343] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08282019_1808_1.txt' [2019-08-28T23:22:25.000Z] [13525] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08292019_1808_1.txt' [2019-08-29T23:22:04.000Z] [8987] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__08302019_1808_1.txt' [2019-08-30T23:22:36.000Z] [13374] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09022019_1809_1.txt' [2019-09-02T23:21:34.000Z] [4952] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09032019_1809_1.txt' [2019-09-03T23:02:04.000Z] [2141] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09042019_1809_1.txt' [2019-09-04T23:01:51.000Z] [4965] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09052019_1809_1.txt' [2019-09-05T23:02:09.000Z] [5063] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09062019_1809_1.txt' [2019-09-06T23:02:11.000Z] [3551] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09092019_1809_1.txt' [2019-09-09T23:02:36.000Z] [5220] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09102019_1809_1.txt' [2019-09-10T23:21:44.000Z] [15864] is new
+. 2019-10-25 12:55:15.381 Remote file '/Inpatient/99940002__09112019_1809_1.txt' [2019-09-11T23:22:56.000Z] [14311] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09122019_1809_1.txt' [2019-09-12T23:22:41.000Z] [12248] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09132019_1809_1.txt' [2019-09-13T23:22:32.000Z] [6395] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09162019_1809_1.txt' [2019-09-16T23:22:06.000Z] [15378] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09172019_1809_1.txt' [2019-09-17T23:22:14.000Z] [6040] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09182019_1809_1.txt' [2019-09-18T23:22:17.000Z] [16544] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09192019_1809_1.txt' [2019-09-19T23:23:16.000Z] [3621] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09202019_1809_1.txt' [2019-09-20T23:22:40.000Z] [17737] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09232019_1809_1.txt' [2019-09-23T23:23:02.000Z] [3372] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09242019_1809_1.txt' [2019-09-24T23:22:53.000Z] [15583] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09252019_1809_1.txt' [2019-09-25T23:23:42.000Z] [7586] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09262019_1809_1.txt' [2019-09-26T23:22:41.000Z] [16035] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09272019_1809_1.txt' [2019-09-27T23:23:20.000Z] [5215] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__09302019_1809_1.txt' [2019-09-30T23:23:58.000Z] [17743] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__10012019_1810_1.txt' [2019-10-01T23:23:26.000Z] [4617] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__10022019_1810_1.txt' [2019-10-02T23:23:29.000Z] [21403] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__10032019_1810_1.txt' [2019-10-03T23:24:12.000Z] [5322] is new
+. 2019-10-25 12:55:15.382 Remote file '/Inpatient/99940002__10042019_1810_1.txt' [2019-10-04T23:22:37.000Z] [16926] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10072019_1810_1.txt' [2019-10-07T23:24:09.000Z] [7742] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10082019_1810_1.txt' [2019-10-08T23:23:39.000Z] [19343] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10092019_1810_1.txt' [2019-10-09T23:23:33.000Z] [14070] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10102019_1810_1.txt' [2019-10-10T23:25:33.000Z] [15216] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10112019_1810_1.txt' [2019-10-11T23:23:59.000Z] [9881] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10142019_1810_1.txt' [2019-10-14T23:23:05.000Z] [14180] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10152019_1810_1.txt' [2019-10-15T23:23:07.000Z] [10081] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10162019_1810_1.txt' [2019-10-16T23:24:57.000Z] [16221] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10172019_1810_1.txt' [2019-10-17T23:23:42.000Z] [10206] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10182019_1810_1.txt' [2019-10-18T23:23:50.000Z] [15747] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10212019_1810_1.txt' [2019-10-21T23:23:40.000Z] [14865] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10222019_1810_1.txt' [2019-10-22T23:23:55.000Z] [24725] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10232019_1810_1.txt' [2019-10-23T23:23:29.000Z] [14392] is new
+. 2019-10-25 12:55:15.383 Remote file '/Inpatient/99940002__10242019_1810_1.txt' [2019-10-24T23:23:52.000Z] [14873] is new
+. 2019-10-25 12:55:15.383 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Archive' [2019-09-26T19:53:37.132Z] [0] is new
+. 2019-10-25 12:55:15.383 Local file 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\Log' [2019-09-26T19:58:04.503Z] [0] is new
+< 2019-10-25 12:55:15.384 Script: Synchronizing...
+. 2019-10-25 12:55:15.398 Synchronizing local directory 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\' with remote directory '/Inpatient/', params = 0x2 (NoConfirmation)
+. 2019-10-25 12:55:15.398 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,510
+. 2019-10-25 12:55:15.398   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:15.398   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:15.398   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:15.401 File: '/Inpatient/99940002__08232019_0708_1.txt' [2019-08-23T12:59:42.000Z] [15510]
+< 2019-10-25 12:55:15.401 Script: Local 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2' <= Remote '/Inpatient'
+. 2019-10-25 12:55:15.402 Copying "/Inpatient/99940002__08232019_0708_1.txt" to local directory started.
+. 2019-10-25 12:55:15.402 Binary transfer mode selected.
+. 2019-10-25 12:55:15.402 Opening remote file.
+> 2019-10-25 12:55:15.403 Type: SSH_FXP_OPEN, Size: 58, Number: 1283
+< 2019-10-25 12:55:15.455 Type: SSH_FXP_STATUS, Size: 17, Number: 1028
+. 2019-10-25 12:55:15.455 Discarding reserved response
+< 2019-10-25 12:55:15.549 Type: SSH_FXP_HANDLE, Size: 12, Number: 1283
+> 2019-10-25 12:55:15.549 Type: SSH_FXP_FSTAT, Size: 16, Number: 1544
+< 2019-10-25 12:55:15.641 Type: SSH_FXP_ATTRS, Size: 46, Number: 1544
+> 2019-10-25 12:55:15.643 Type: SSH_FXP_READ, Size: 24, Number: 1797
+< 2019-10-25 12:55:15.835 Status code: 1
+. 2019-10-25 12:55:15.835 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:15.835 Type: SSH_FXP_CLOSE, Size: 12, Number: 2308
+. 2019-10-25 12:55:15.836 Preserving timestamp [2019-08-23T12:59:42.000Z]
+. 2019-10-25 12:55:15.837 Transfer done: '/Inpatient/99940002__08232019_0708_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08232019_0708_1.txt' [15510]
+. 2019-10-25 12:55:15.837 Copying finished: Transferred: 15,510, Elapsed: 0:00:00, CPS: 0/s
+. 2019-10-25 12:55:15.837 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 6,510
+. 2019-10-25 12:55:15.837   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:15.837   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:15.837   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:15.838 File: '/Inpatient/99940002__08232019_1808_1.txt' [2019-08-23T23:20:32.000Z] [6510]
+. 2019-10-25 12:55:15.839 Copying "/Inpatient/99940002__08232019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:15.839 Binary transfer mode selected.
+. 2019-10-25 12:55:15.839 Opening remote file.
+> 2019-10-25 12:55:15.839 Type: SSH_FXP_OPEN, Size: 58, Number: 2563
+< 2019-10-25 12:55:15.932 Type: SSH_FXP_STATUS, Size: 17, Number: 2308
+. 2019-10-25 12:55:15.932 Discarding reserved response
+< 2019-10-25 12:55:16.033 Type: SSH_FXP_HANDLE, Size: 12, Number: 2563
+> 2019-10-25 12:55:16.034 Type: SSH_FXP_FSTAT, Size: 16, Number: 2824
+< 2019-10-25 12:55:16.137 Type: SSH_FXP_ATTRS, Size: 46, Number: 2824
+> 2019-10-25 12:55:16.138 Type: SSH_FXP_READ, Size: 24, Number: 3077
+< 2019-10-25 12:55:16.352 Status code: 1
+. 2019-10-25 12:55:16.352 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:16.352 Type: SSH_FXP_CLOSE, Size: 12, Number: 3588
+. 2019-10-25 12:55:16.352 Preserving timestamp [2019-08-23T23:20:32.000Z]
+. 2019-10-25 12:55:16.352 Transfer done: '/Inpatient/99940002__08232019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08232019_1808_1.txt' [6510]
+. 2019-10-25 12:55:16.353 Copying finished: Transferred: 22,020, Elapsed: 0:00:00, CPS: 10,689/s
+. 2019-10-25 12:55:16.353 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 13,635
+. 2019-10-25 12:55:16.353   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:16.353   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:16.353   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:16.353 File: '/Inpatient/99940002__08262019_1808_1.txt' [2019-08-26T23:21:10.000Z] [13635]
+. 2019-10-25 12:55:16.354 Copying "/Inpatient/99940002__08262019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:16.354 Binary transfer mode selected.
+. 2019-10-25 12:55:16.354 Opening remote file.
+> 2019-10-25 12:55:16.354 Type: SSH_FXP_OPEN, Size: 58, Number: 3843
+< 2019-10-25 12:55:16.524 Type: SSH_FXP_STATUS, Size: 17, Number: 3588
+. 2019-10-25 12:55:16.524 Discarding reserved response
+< 2019-10-25 12:55:16.617 Type: SSH_FXP_HANDLE, Size: 12, Number: 3843
+> 2019-10-25 12:55:16.617 Type: SSH_FXP_FSTAT, Size: 16, Number: 4104
+< 2019-10-25 12:55:16.710 Type: SSH_FXP_ATTRS, Size: 46, Number: 4104
+> 2019-10-25 12:55:16.710 Type: SSH_FXP_READ, Size: 24, Number: 4357
+< 2019-10-25 12:55:16.899 Status code: 1
+. 2019-10-25 12:55:16.899 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:16.899 Type: SSH_FXP_CLOSE, Size: 12, Number: 4868
+. 2019-10-25 12:55:16.900 Preserving timestamp [2019-08-26T23:21:10.000Z]
+. 2019-10-25 12:55:16.901 Transfer done: '/Inpatient/99940002__08262019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08262019_1808_1.txt' [13635]
+. 2019-10-25 12:55:16.902 Copying finished: Transferred: 35,655, Elapsed: 0:00:01, CPS: 17,426/s
+. 2019-10-25 12:55:16.902 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 4,343
+. 2019-10-25 12:55:16.902   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:16.902   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:16.902   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:16.902 File: '/Inpatient/99940002__08272019_1808_1.txt' [2019-08-27T23:21:36.000Z] [4343]
+. 2019-10-25 12:55:16.903 Copying "/Inpatient/99940002__08272019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:16.903 Binary transfer mode selected.
+. 2019-10-25 12:55:16.904 Opening remote file.
+> 2019-10-25 12:55:16.904 Type: SSH_FXP_OPEN, Size: 58, Number: 5123
+< 2019-10-25 12:55:16.992 Type: SSH_FXP_STATUS, Size: 17, Number: 4868
+. 2019-10-25 12:55:16.992 Discarding reserved response
+< 2019-10-25 12:55:17.104 Type: SSH_FXP_HANDLE, Size: 12, Number: 5123
+> 2019-10-25 12:55:17.105 Type: SSH_FXP_FSTAT, Size: 16, Number: 5384
+< 2019-10-25 12:55:17.198 Type: SSH_FXP_ATTRS, Size: 46, Number: 5384
+> 2019-10-25 12:55:17.198 Type: SSH_FXP_READ, Size: 24, Number: 5637
+< 2019-10-25 12:55:17.490 Status code: 1
+. 2019-10-25 12:55:17.490 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:17.490 Type: SSH_FXP_CLOSE, Size: 12, Number: 6148
+. 2019-10-25 12:55:17.490 Preserving timestamp [2019-08-27T23:21:36.000Z]
+. 2019-10-25 12:55:17.490 Transfer done: '/Inpatient/99940002__08272019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08272019_1808_1.txt' [4343]
+. 2019-10-25 12:55:17.491 Copying finished: Transferred: 39,998, Elapsed: 0:00:02, CPS: 13,993/s
+. 2019-10-25 12:55:17.491 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 13,525
+. 2019-10-25 12:55:17.491   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:17.491   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:17.491   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:17.491 File: '/Inpatient/99940002__08282019_1808_1.txt' [2019-08-28T23:22:25.000Z] [13525]
+. 2019-10-25 12:55:17.492 Copying "/Inpatient/99940002__08282019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:17.492 Binary transfer mode selected.
+. 2019-10-25 12:55:17.492 Opening remote file.
+> 2019-10-25 12:55:17.492 Type: SSH_FXP_OPEN, Size: 58, Number: 6403
+< 2019-10-25 12:55:17.592 Type: SSH_FXP_STATUS, Size: 17, Number: 6148
+. 2019-10-25 12:55:17.592 Discarding reserved response
+< 2019-10-25 12:55:17.682 Type: SSH_FXP_HANDLE, Size: 12, Number: 6403
+> 2019-10-25 12:55:17.682 Type: SSH_FXP_FSTAT, Size: 16, Number: 6664
+< 2019-10-25 12:55:17.775 Type: SSH_FXP_ATTRS, Size: 46, Number: 6664
+> 2019-10-25 12:55:17.776 Type: SSH_FXP_READ, Size: 24, Number: 6917
+< 2019-10-25 12:55:17.965 Status code: 1
+. 2019-10-25 12:55:17.965 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:17.965 Type: SSH_FXP_CLOSE, Size: 12, Number: 7428
+. 2019-10-25 12:55:17.965 Preserving timestamp [2019-08-28T23:22:25.000Z]
+. 2019-10-25 12:55:17.966 Transfer done: '/Inpatient/99940002__08282019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08282019_1808_1.txt' [13525]
+. 2019-10-25 12:55:17.967 Copying finished: Transferred: 53,523, Elapsed: 0:00:02, CPS: 17,138/s
+. 2019-10-25 12:55:17.968 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 8,987
+. 2019-10-25 12:55:17.968   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:17.968   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:17.968   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:17.968 File: '/Inpatient/99940002__08292019_1808_1.txt' [2019-08-29T23:22:04.000Z] [8987]
+. 2019-10-25 12:55:17.969 Copying "/Inpatient/99940002__08292019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:17.969 Binary transfer mode selected.
+. 2019-10-25 12:55:17.969 Opening remote file.
+> 2019-10-25 12:55:17.969 Type: SSH_FXP_OPEN, Size: 58, Number: 7683
+< 2019-10-25 12:55:18.055 Type: SSH_FXP_STATUS, Size: 17, Number: 7428
+. 2019-10-25 12:55:18.055 Discarding reserved response
+< 2019-10-25 12:55:18.148 Type: SSH_FXP_HANDLE, Size: 12, Number: 7683
+> 2019-10-25 12:55:18.149 Type: SSH_FXP_FSTAT, Size: 16, Number: 7944
+< 2019-10-25 12:55:18.243 Type: SSH_FXP_ATTRS, Size: 46, Number: 7944
+> 2019-10-25 12:55:18.243 Type: SSH_FXP_READ, Size: 24, Number: 8197
+< 2019-10-25 12:55:18.433 Status code: 1
+. 2019-10-25 12:55:18.433 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:18.433 Type: SSH_FXP_CLOSE, Size: 12, Number: 8708
+. 2019-10-25 12:55:18.433 Preserving timestamp [2019-08-29T23:22:04.000Z]
+. 2019-10-25 12:55:18.434 Transfer done: '/Inpatient/99940002__08292019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08292019_1808_1.txt' [8987]
+. 2019-10-25 12:55:18.435 Copying finished: Transferred: 62,510, Elapsed: 0:00:03, CPS: 17,491/s
+. 2019-10-25 12:55:18.436 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 13,374
+. 2019-10-25 12:55:18.436   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:18.436   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:18.436   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:18.436 File: '/Inpatient/99940002__08302019_1808_1.txt' [2019-08-30T23:22:36.000Z] [13374]
+. 2019-10-25 12:55:18.437 Copying "/Inpatient/99940002__08302019_1808_1.txt" to local directory started.
+. 2019-10-25 12:55:18.437 Binary transfer mode selected.
+. 2019-10-25 12:55:18.437 Opening remote file.
+> 2019-10-25 12:55:18.437 Type: SSH_FXP_OPEN, Size: 58, Number: 8963
+< 2019-10-25 12:55:18.536 Type: SSH_FXP_STATUS, Size: 17, Number: 8708
+. 2019-10-25 12:55:18.536 Discarding reserved response
+< 2019-10-25 12:55:18.664 Type: SSH_FXP_HANDLE, Size: 12, Number: 8963
+> 2019-10-25 12:55:18.664 Type: SSH_FXP_FSTAT, Size: 16, Number: 9224
+< 2019-10-25 12:55:18.765 Type: SSH_FXP_ATTRS, Size: 46, Number: 9224
+> 2019-10-25 12:55:18.766 Type: SSH_FXP_READ, Size: 24, Number: 9477
+< 2019-10-25 12:55:18.967 Status code: 1
+. 2019-10-25 12:55:18.967 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:18.967 Type: SSH_FXP_CLOSE, Size: 12, Number: 9988
+. 2019-10-25 12:55:18.967 Preserving timestamp [2019-08-30T23:22:36.000Z]
+. 2019-10-25 12:55:18.968 Transfer done: '/Inpatient/99940002__08302019_1808_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__08302019_1808_1.txt' [13374]
+. 2019-10-25 12:55:18.969 Copying finished: Transferred: 75,884, Elapsed: 0:00:03, CPS: 18,761/s
+. 2019-10-25 12:55:18.970 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 4,952
+. 2019-10-25 12:55:18.970   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:18.970   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:18.970   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:18.970 File: '/Inpatient/99940002__09022019_1809_1.txt' [2019-09-02T23:21:34.000Z] [4952]
+. 2019-10-25 12:55:18.971 Copying "/Inpatient/99940002__09022019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:18.971 Binary transfer mode selected.
+. 2019-10-25 12:55:18.971 Opening remote file.
+> 2019-10-25 12:55:18.971 Type: SSH_FXP_OPEN, Size: 58, Number: 10243
+< 2019-10-25 12:55:19.067 Type: SSH_FXP_STATUS, Size: 17, Number: 9988
+. 2019-10-25 12:55:19.067 Discarding reserved response
+< 2019-10-25 12:55:19.192 Type: SSH_FXP_HANDLE, Size: 12, Number: 10243
+> 2019-10-25 12:55:19.193 Type: SSH_FXP_FSTAT, Size: 16, Number: 10504
+< 2019-10-25 12:55:19.295 Type: SSH_FXP_ATTRS, Size: 46, Number: 10504
+> 2019-10-25 12:55:19.295 Type: SSH_FXP_READ, Size: 24, Number: 10757
+< 2019-10-25 12:55:19.490 Status code: 1
+. 2019-10-25 12:55:19.491 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:19.491 Type: SSH_FXP_CLOSE, Size: 12, Number: 11268
+. 2019-10-25 12:55:19.491 Preserving timestamp [2019-09-02T23:21:34.000Z]
+. 2019-10-25 12:55:19.491 Transfer done: '/Inpatient/99940002__09022019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09022019_1809_1.txt' [4952]
+. 2019-10-25 12:55:19.492 Copying finished: Transferred: 80,836, Elapsed: 0:00:04, CPS: 17,420/s
+. 2019-10-25 12:55:19.492 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 2,141
+. 2019-10-25 12:55:19.492   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:19.492   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:19.492   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:19.492 File: '/Inpatient/99940002__09032019_1809_1.txt' [2019-09-03T23:02:04.000Z] [2141]
+. 2019-10-25 12:55:19.493 Copying "/Inpatient/99940002__09032019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:19.493 Binary transfer mode selected.
+. 2019-10-25 12:55:19.493 Opening remote file.
+> 2019-10-25 12:55:19.493 Type: SSH_FXP_OPEN, Size: 58, Number: 11523
+< 2019-10-25 12:55:19.596 Type: SSH_FXP_STATUS, Size: 17, Number: 11268
+. 2019-10-25 12:55:19.596 Discarding reserved response
+< 2019-10-25 12:55:19.734 Type: SSH_FXP_HANDLE, Size: 12, Number: 11523
+> 2019-10-25 12:55:19.734 Type: SSH_FXP_FSTAT, Size: 16, Number: 11784
+< 2019-10-25 12:55:19.837 Type: SSH_FXP_ATTRS, Size: 46, Number: 11784
+> 2019-10-25 12:55:19.838 Type: SSH_FXP_READ, Size: 24, Number: 12037
+< 2019-10-25 12:55:20.031 Status code: 1
+. 2019-10-25 12:55:20.031 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:20.031 Type: SSH_FXP_CLOSE, Size: 12, Number: 12548
+. 2019-10-25 12:55:20.031 Preserving timestamp [2019-09-03T23:02:04.000Z]
+. 2019-10-25 12:55:20.031 Transfer done: '/Inpatient/99940002__09032019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09032019_1809_1.txt' [2141]
+. 2019-10-25 12:55:20.032 Copying finished: Transferred: 82,977, Elapsed: 0:00:04, CPS: 15,759/s
+. 2019-10-25 12:55:20.032 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 4,965
+. 2019-10-25 12:55:20.032   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:20.032   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:20.032   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:20.032 File: '/Inpatient/99940002__09042019_1809_1.txt' [2019-09-04T23:01:51.000Z] [4965]
+. 2019-10-25 12:55:20.033 Copying "/Inpatient/99940002__09042019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:20.033 Binary transfer mode selected.
+. 2019-10-25 12:55:20.033 Opening remote file.
+> 2019-10-25 12:55:20.033 Type: SSH_FXP_OPEN, Size: 58, Number: 12803
+< 2019-10-25 12:55:20.135 Type: SSH_FXP_STATUS, Size: 17, Number: 12548
+. 2019-10-25 12:55:20.135 Discarding reserved response
+< 2019-10-25 12:55:20.265 Type: SSH_FXP_HANDLE, Size: 12, Number: 12803
+> 2019-10-25 12:55:20.265 Type: SSH_FXP_FSTAT, Size: 16, Number: 13064
+< 2019-10-25 12:55:20.367 Type: SSH_FXP_ATTRS, Size: 46, Number: 13064
+> 2019-10-25 12:55:20.368 Type: SSH_FXP_READ, Size: 24, Number: 13317
+< 2019-10-25 12:55:20.556 Status code: 1
+. 2019-10-25 12:55:20.556 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:20.556 Type: SSH_FXP_CLOSE, Size: 12, Number: 13828
+. 2019-10-25 12:55:20.556 Preserving timestamp [2019-09-04T23:01:51.000Z]
+. 2019-10-25 12:55:20.556 Transfer done: '/Inpatient/99940002__09042019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09042019_1809_1.txt' [4965]
+. 2019-10-25 12:55:20.557 Copying finished: Transferred: 87,942, Elapsed: 0:00:05, CPS: 15,052/s
+. 2019-10-25 12:55:20.557 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 5,063
+. 2019-10-25 12:55:20.557   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:20.557   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:20.557   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:20.557 File: '/Inpatient/99940002__09052019_1809_1.txt' [2019-09-05T23:02:09.000Z] [5063]
+. 2019-10-25 12:55:20.558 Copying "/Inpatient/99940002__09052019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:20.558 Binary transfer mode selected.
+. 2019-10-25 12:55:20.558 Opening remote file.
+> 2019-10-25 12:55:20.558 Type: SSH_FXP_OPEN, Size: 58, Number: 14083
+< 2019-10-25 12:55:20.657 Type: SSH_FXP_STATUS, Size: 17, Number: 13828
+. 2019-10-25 12:55:20.657 Discarding reserved response
+< 2019-10-25 12:55:20.788 Type: SSH_FXP_HANDLE, Size: 12, Number: 14083
+> 2019-10-25 12:55:20.788 Type: SSH_FXP_FSTAT, Size: 16, Number: 14344
+< 2019-10-25 12:55:20.894 Type: SSH_FXP_ATTRS, Size: 46, Number: 14344
+> 2019-10-25 12:55:20.895 Type: SSH_FXP_READ, Size: 24, Number: 14597
+< 2019-10-25 12:55:21.084 Status code: 1
+. 2019-10-25 12:55:21.084 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:21.084 Type: SSH_FXP_CLOSE, Size: 12, Number: 15108
+. 2019-10-25 12:55:21.084 Preserving timestamp [2019-09-05T23:02:09.000Z]
+. 2019-10-25 12:55:21.085 Transfer done: '/Inpatient/99940002__09052019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09052019_1809_1.txt' [5063]
+. 2019-10-25 12:55:21.085 Copying finished: Transferred: 93,005, Elapsed: 0:00:05, CPS: 14,504/s
+. 2019-10-25 12:55:21.085 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 3,551
+. 2019-10-25 12:55:21.085   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:21.085   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:21.085   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:21.085 File: '/Inpatient/99940002__09062019_1809_1.txt' [2019-09-06T23:02:11.000Z] [3551]
+. 2019-10-25 12:55:21.086 Copying "/Inpatient/99940002__09062019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:21.086 Binary transfer mode selected.
+. 2019-10-25 12:55:21.086 Opening remote file.
+> 2019-10-25 12:55:21.086 Type: SSH_FXP_OPEN, Size: 58, Number: 15363
+< 2019-10-25 12:55:21.188 Type: SSH_FXP_STATUS, Size: 17, Number: 15108
+. 2019-10-25 12:55:21.188 Discarding reserved response
+< 2019-10-25 12:55:21.330 Type: SSH_FXP_HANDLE, Size: 12, Number: 15363
+> 2019-10-25 12:55:21.330 Type: SSH_FXP_FSTAT, Size: 16, Number: 15624
+< 2019-10-25 12:55:21.430 Type: SSH_FXP_ATTRS, Size: 46, Number: 15624
+> 2019-10-25 12:55:21.432 Type: SSH_FXP_READ, Size: 24, Number: 15877
+< 2019-10-25 12:55:21.628 Status code: 1
+. 2019-10-25 12:55:21.628 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:21.628 Type: SSH_FXP_CLOSE, Size: 12, Number: 16388
+. 2019-10-25 12:55:21.628 Preserving timestamp [2019-09-06T23:02:11.000Z]
+. 2019-10-25 12:55:21.629 Transfer done: '/Inpatient/99940002__09062019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09062019_1809_1.txt' [3551]
+. 2019-10-25 12:55:21.630 Copying finished: Transferred: 96,556, Elapsed: 0:00:06, CPS: 13,795/s
+. 2019-10-25 12:55:21.630 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 5,220
+. 2019-10-25 12:55:21.630   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:21.630   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:21.630   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:21.630 File: '/Inpatient/99940002__09092019_1809_1.txt' [2019-09-09T23:02:36.000Z] [5220]
+. 2019-10-25 12:55:21.630 Copying "/Inpatient/99940002__09092019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:21.630 Binary transfer mode selected.
+. 2019-10-25 12:55:21.631 Opening remote file.
+> 2019-10-25 12:55:21.631 Type: SSH_FXP_OPEN, Size: 58, Number: 16643
+< 2019-10-25 12:55:21.730 Type: SSH_FXP_STATUS, Size: 17, Number: 16388
+. 2019-10-25 12:55:21.730 Discarding reserved response
+< 2019-10-25 12:55:21.859 Type: SSH_FXP_HANDLE, Size: 12, Number: 16643
+> 2019-10-25 12:55:21.859 Type: SSH_FXP_FSTAT, Size: 16, Number: 16904
+< 2019-10-25 12:55:21.960 Type: SSH_FXP_ATTRS, Size: 46, Number: 16904
+> 2019-10-25 12:55:21.962 Type: SSH_FXP_READ, Size: 24, Number: 17157
+< 2019-10-25 12:55:22.159 Status code: 1
+. 2019-10-25 12:55:22.159 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:22.159 Type: SSH_FXP_CLOSE, Size: 12, Number: 17668
+. 2019-10-25 12:55:22.159 Preserving timestamp [2019-09-09T23:02:36.000Z]
+. 2019-10-25 12:55:22.159 Transfer done: '/Inpatient/99940002__09092019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09092019_1809_1.txt' [5220]
+. 2019-10-25 12:55:22.160 Copying finished: Transferred: 101,776, Elapsed: 0:00:06, CPS: 13,466/s
+. 2019-10-25 12:55:22.160 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,864
+. 2019-10-25 12:55:22.160   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:22.160   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:22.160   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:22.160 File: '/Inpatient/99940002__09102019_1809_1.txt' [2019-09-10T23:21:44.000Z] [15864]
+. 2019-10-25 12:55:22.161 Copying "/Inpatient/99940002__09102019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:22.161 Binary transfer mode selected.
+. 2019-10-25 12:55:22.161 Opening remote file.
+> 2019-10-25 12:55:22.161 Type: SSH_FXP_OPEN, Size: 58, Number: 17923
+< 2019-10-25 12:55:22.260 Type: SSH_FXP_STATUS, Size: 17, Number: 17668
+. 2019-10-25 12:55:22.260 Discarding reserved response
+< 2019-10-25 12:55:22.400 Type: SSH_FXP_HANDLE, Size: 12, Number: 17923
+> 2019-10-25 12:55:22.400 Type: SSH_FXP_FSTAT, Size: 16, Number: 18184
+< 2019-10-25 12:55:22.505 Type: SSH_FXP_ATTRS, Size: 46, Number: 18184
+> 2019-10-25 12:55:22.505 Type: SSH_FXP_READ, Size: 24, Number: 18437
+< 2019-10-25 12:55:22.719 Status code: 1
+. 2019-10-25 12:55:22.719 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:22.719 Type: SSH_FXP_CLOSE, Size: 12, Number: 18948
+. 2019-10-25 12:55:22.719 Preserving timestamp [2019-09-10T23:21:44.000Z]
+. 2019-10-25 12:55:22.719 Transfer done: '/Inpatient/99940002__09102019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09102019_1809_1.txt' [15864]
+. 2019-10-25 12:55:22.719 Copying finished: Transferred: 117,640, Elapsed: 0:00:07, CPS: 14,657/s
+. 2019-10-25 12:55:22.719 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,311
+. 2019-10-25 12:55:22.719   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:22.719   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:22.719   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:22.719 File: '/Inpatient/99940002__09112019_1809_1.txt' [2019-09-11T23:22:56.000Z] [14311]
+. 2019-10-25 12:55:22.720 Copying "/Inpatient/99940002__09112019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:22.720 Binary transfer mode selected.
+. 2019-10-25 12:55:22.720 Opening remote file.
+> 2019-10-25 12:55:22.720 Type: SSH_FXP_OPEN, Size: 58, Number: 19203
+< 2019-10-25 12:55:22.824 Type: SSH_FXP_STATUS, Size: 17, Number: 18948
+. 2019-10-25 12:55:22.824 Discarding reserved response
+< 2019-10-25 12:55:22.954 Type: SSH_FXP_HANDLE, Size: 12, Number: 19203
+> 2019-10-25 12:55:22.954 Type: SSH_FXP_FSTAT, Size: 16, Number: 19464
+< 2019-10-25 12:55:23.055 Type: SSH_FXP_ATTRS, Size: 46, Number: 19464
+> 2019-10-25 12:55:23.056 Type: SSH_FXP_READ, Size: 24, Number: 19717
+< 2019-10-25 12:55:23.267 Status code: 1
+. 2019-10-25 12:55:23.267 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:23.267 Type: SSH_FXP_CLOSE, Size: 12, Number: 20228
+. 2019-10-25 12:55:23.267 Preserving timestamp [2019-09-11T23:22:56.000Z]
+. 2019-10-25 12:55:23.268 Transfer done: '/Inpatient/99940002__09112019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09112019_1809_1.txt' [14311]
+. 2019-10-25 12:55:23.269 Copying finished: Transferred: 131,951, Elapsed: 0:00:07, CPS: 15,494/s
+. 2019-10-25 12:55:23.270 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 12,248
+. 2019-10-25 12:55:23.270   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:23.270   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:23.270   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:23.270 File: '/Inpatient/99940002__09122019_1809_1.txt' [2019-09-12T23:22:41.000Z] [12248]
+. 2019-10-25 12:55:23.271 Copying "/Inpatient/99940002__09122019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:23.271 Binary transfer mode selected.
+. 2019-10-25 12:55:23.271 Opening remote file.
+> 2019-10-25 12:55:23.271 Type: SSH_FXP_OPEN, Size: 58, Number: 20483
+< 2019-10-25 12:55:23.366 Type: SSH_FXP_STATUS, Size: 17, Number: 20228
+. 2019-10-25 12:55:23.366 Discarding reserved response
+< 2019-10-25 12:55:23.513 Type: SSH_FXP_HANDLE, Size: 12, Number: 20483
+> 2019-10-25 12:55:23.513 Type: SSH_FXP_FSTAT, Size: 16, Number: 20744
+< 2019-10-25 12:55:23.616 Type: SSH_FXP_ATTRS, Size: 46, Number: 20744
+> 2019-10-25 12:55:23.617 Type: SSH_FXP_READ, Size: 24, Number: 20997
+< 2019-10-25 12:55:23.823 Status code: 1
+. 2019-10-25 12:55:23.823 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:23.823 Type: SSH_FXP_CLOSE, Size: 12, Number: 21508
+. 2019-10-25 12:55:23.823 Preserving timestamp [2019-09-12T23:22:41.000Z]
+. 2019-10-25 12:55:23.824 Transfer done: '/Inpatient/99940002__09122019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09122019_1809_1.txt' [12248]
+. 2019-10-25 12:55:23.825 Copying finished: Transferred: 144,199, Elapsed: 0:00:08, CPS: 15,930/s
+. 2019-10-25 12:55:23.826 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 6,395
+. 2019-10-25 12:55:23.826   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:23.826   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:23.826   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:23.826 File: '/Inpatient/99940002__09132019_1809_1.txt' [2019-09-13T23:22:32.000Z] [6395]
+. 2019-10-25 12:55:23.827 Copying "/Inpatient/99940002__09132019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:23.827 Binary transfer mode selected.
+. 2019-10-25 12:55:23.827 Opening remote file.
+> 2019-10-25 12:55:23.827 Type: SSH_FXP_OPEN, Size: 58, Number: 21763
+< 2019-10-25 12:55:23.926 Type: SSH_FXP_STATUS, Size: 17, Number: 21508
+. 2019-10-25 12:55:23.926 Discarding reserved response
+< 2019-10-25 12:55:24.060 Type: SSH_FXP_HANDLE, Size: 12, Number: 21763
+> 2019-10-25 12:55:24.061 Type: SSH_FXP_FSTAT, Size: 16, Number: 22024
+< 2019-10-25 12:55:24.163 Type: SSH_FXP_ATTRS, Size: 46, Number: 22024
+> 2019-10-25 12:55:24.165 Type: SSH_FXP_READ, Size: 24, Number: 22277
+< 2019-10-25 12:55:24.366 Status code: 1
+. 2019-10-25 12:55:24.366 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:24.366 Type: SSH_FXP_CLOSE, Size: 12, Number: 22788
+. 2019-10-25 12:55:24.366 Preserving timestamp [2019-09-13T23:22:32.000Z]
+. 2019-10-25 12:55:24.366 Transfer done: '/Inpatient/99940002__09132019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09132019_1809_1.txt' [6395]
+. 2019-10-25 12:55:24.367 Copying finished: Transferred: 150,594, Elapsed: 0:00:08, CPS: 15,661/s
+. 2019-10-25 12:55:24.367 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,378
+. 2019-10-25 12:55:24.367   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:24.367   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:24.367   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:24.367 File: '/Inpatient/99940002__09162019_1809_1.txt' [2019-09-16T23:22:06.000Z] [15378]
+. 2019-10-25 12:55:24.368 Copying "/Inpatient/99940002__09162019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:24.368 Binary transfer mode selected.
+. 2019-10-25 12:55:24.368 Opening remote file.
+> 2019-10-25 12:55:24.368 Type: SSH_FXP_OPEN, Size: 58, Number: 23043
+< 2019-10-25 12:55:24.468 Type: SSH_FXP_STATUS, Size: 17, Number: 22788
+. 2019-10-25 12:55:24.468 Discarding reserved response
+< 2019-10-25 12:55:24.600 Type: SSH_FXP_HANDLE, Size: 12, Number: 23043
+> 2019-10-25 12:55:24.600 Type: SSH_FXP_FSTAT, Size: 16, Number: 23304
+< 2019-10-25 12:55:24.702 Type: SSH_FXP_ATTRS, Size: 46, Number: 23304
+> 2019-10-25 12:55:24.704 Type: SSH_FXP_READ, Size: 24, Number: 23557
+< 2019-10-25 12:55:24.908 Status code: 1
+. 2019-10-25 12:55:24.908 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:24.908 Type: SSH_FXP_CLOSE, Size: 12, Number: 24068
+. 2019-10-25 12:55:24.908 Preserving timestamp [2019-09-16T23:22:06.000Z]
+. 2019-10-25 12:55:24.909 Transfer done: '/Inpatient/99940002__09162019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09162019_1809_1.txt' [15378]
+. 2019-10-25 12:55:24.910 Copying finished: Transferred: 165,972, Elapsed: 0:00:09, CPS: 16,433/s
+. 2019-10-25 12:55:24.910 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 6,040
+. 2019-10-25 12:55:24.910   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:24.910   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:24.910   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:24.910 File: '/Inpatient/99940002__09172019_1809_1.txt' [2019-09-17T23:22:14.000Z] [6040]
+. 2019-10-25 12:55:24.910 Copying "/Inpatient/99940002__09172019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:24.910 Binary transfer mode selected.
+. 2019-10-25 12:55:24.911 Opening remote file.
+> 2019-10-25 12:55:24.911 Type: SSH_FXP_OPEN, Size: 58, Number: 24323
+< 2019-10-25 12:55:25.013 Type: SSH_FXP_STATUS, Size: 17, Number: 24068
+. 2019-10-25 12:55:25.013 Discarding reserved response
+< 2019-10-25 12:55:25.149 Type: SSH_FXP_HANDLE, Size: 12, Number: 24323
+> 2019-10-25 12:55:25.150 Type: SSH_FXP_FSTAT, Size: 16, Number: 24584
+< 2019-10-25 12:55:25.247 Type: SSH_FXP_ATTRS, Size: 46, Number: 24584
+> 2019-10-25 12:55:25.249 Type: SSH_FXP_READ, Size: 24, Number: 24837
+< 2019-10-25 12:55:25.452 Status code: 1
+. 2019-10-25 12:55:25.453 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:25.453 Type: SSH_FXP_CLOSE, Size: 12, Number: 25348
+. 2019-10-25 12:55:25.453 Preserving timestamp [2019-09-17T23:22:14.000Z]
+. 2019-10-25 12:55:25.453 Transfer done: '/Inpatient/99940002__09172019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09172019_1809_1.txt' [6040]
+. 2019-10-25 12:55:25.454 Copying finished: Transferred: 172,012, Elapsed: 0:00:10, CPS: 16,129/s
+. 2019-10-25 12:55:25.454 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 16,544
+. 2019-10-25 12:55:25.454   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:25.454   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:25.454   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:25.454 File: '/Inpatient/99940002__09182019_1809_1.txt' [2019-09-18T23:22:17.000Z] [16544]
+. 2019-10-25 12:55:25.454 Copying "/Inpatient/99940002__09182019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:25.454 Binary transfer mode selected.
+. 2019-10-25 12:55:25.454 Opening remote file.
+> 2019-10-25 12:55:25.454 Type: SSH_FXP_OPEN, Size: 58, Number: 25603
+< 2019-10-25 12:55:25.548 Type: SSH_FXP_STATUS, Size: 17, Number: 25348
+. 2019-10-25 12:55:25.548 Discarding reserved response
+< 2019-10-25 12:55:25.668 Type: SSH_FXP_HANDLE, Size: 12, Number: 25603
+> 2019-10-25 12:55:25.668 Type: SSH_FXP_FSTAT, Size: 16, Number: 25864
+< 2019-10-25 12:55:25.765 Type: SSH_FXP_ATTRS, Size: 46, Number: 25864
+> 2019-10-25 12:55:25.767 Type: SSH_FXP_READ, Size: 24, Number: 26117
+< 2019-10-25 12:55:26.057 Status code: 1
+. 2019-10-25 12:55:26.057 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:26.057 Type: SSH_FXP_CLOSE, Size: 12, Number: 26628
+. 2019-10-25 12:55:26.057 Preserving timestamp [2019-09-18T23:22:17.000Z]
+. 2019-10-25 12:55:26.058 Transfer done: '/Inpatient/99940002__09182019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09182019_1809_1.txt' [16544]
+. 2019-10-25 12:55:26.059 Copying finished: Transferred: 188,556, Elapsed: 0:00:10, CPS: 16,781/s
+. 2019-10-25 12:55:26.060 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 3,621
+. 2019-10-25 12:55:26.060   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:26.060   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:26.060   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:26.060 File: '/Inpatient/99940002__09192019_1809_1.txt' [2019-09-19T23:23:16.000Z] [3621]
+. 2019-10-25 12:55:26.061 Copying "/Inpatient/99940002__09192019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:26.061 Binary transfer mode selected.
+. 2019-10-25 12:55:26.061 Opening remote file.
+> 2019-10-25 12:55:26.061 Type: SSH_FXP_OPEN, Size: 58, Number: 26883
+< 2019-10-25 12:55:26.159 Type: SSH_FXP_STATUS, Size: 17, Number: 26628
+. 2019-10-25 12:55:26.159 Discarding reserved response
+< 2019-10-25 12:55:26.295 Type: SSH_FXP_HANDLE, Size: 12, Number: 26883
+> 2019-10-25 12:55:26.295 Type: SSH_FXP_FSTAT, Size: 16, Number: 27144
+< 2019-10-25 12:55:26.398 Type: SSH_FXP_ATTRS, Size: 46, Number: 27144
+> 2019-10-25 12:55:26.400 Type: SSH_FXP_READ, Size: 24, Number: 27397
+< 2019-10-25 12:55:26.589 Status code: 1
+. 2019-10-25 12:55:26.589 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:26.589 Type: SSH_FXP_CLOSE, Size: 12, Number: 27908
+. 2019-10-25 12:55:26.589 Preserving timestamp [2019-09-19T23:23:16.000Z]
+. 2019-10-25 12:55:26.590 Transfer done: '/Inpatient/99940002__09192019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09192019_1809_1.txt' [3621]
+. 2019-10-25 12:55:26.590 Copying finished: Transferred: 192,177, Elapsed: 0:00:11, CPS: 16,002/s
+. 2019-10-25 12:55:26.590 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 17,737
+. 2019-10-25 12:55:26.590   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:26.590   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:26.590   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:26.590 File: '/Inpatient/99940002__09202019_1809_1.txt' [2019-09-20T23:22:40.000Z] [17737]
+. 2019-10-25 12:55:26.591 Copying "/Inpatient/99940002__09202019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:26.591 Binary transfer mode selected.
+. 2019-10-25 12:55:26.591 Opening remote file.
+> 2019-10-25 12:55:26.591 Type: SSH_FXP_OPEN, Size: 58, Number: 28163
+< 2019-10-25 12:55:26.688 Type: SSH_FXP_STATUS, Size: 17, Number: 27908
+. 2019-10-25 12:55:26.688 Discarding reserved response
+< 2019-10-25 12:55:26.819 Type: SSH_FXP_HANDLE, Size: 12, Number: 28163
+> 2019-10-25 12:55:26.820 Type: SSH_FXP_FSTAT, Size: 16, Number: 28424
+< 2019-10-25 12:55:26.922 Type: SSH_FXP_ATTRS, Size: 46, Number: 28424
+> 2019-10-25 12:55:26.924 Type: SSH_FXP_READ, Size: 24, Number: 28677
+< 2019-10-25 12:55:27.136 Status code: 1
+. 2019-10-25 12:55:27.136 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:27.136 Type: SSH_FXP_CLOSE, Size: 12, Number: 29188
+. 2019-10-25 12:55:27.136 Preserving timestamp [2019-09-20T23:22:40.000Z]
+. 2019-10-25 12:55:27.137 Transfer done: '/Inpatient/99940002__09202019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09202019_1809_1.txt' [17737]
+. 2019-10-25 12:55:27.139 Copying finished: Transferred: 209,914, Elapsed: 0:00:11, CPS: 16,872/s
+. 2019-10-25 12:55:27.139 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 3,372
+. 2019-10-25 12:55:27.139   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:27.139   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:27.139   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:27.139 File: '/Inpatient/99940002__09232019_1809_1.txt' [2019-09-23T23:23:02.000Z] [3372]
+. 2019-10-25 12:55:27.140 Copying "/Inpatient/99940002__09232019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:27.140 Binary transfer mode selected.
+. 2019-10-25 12:55:27.140 Opening remote file.
+> 2019-10-25 12:55:27.141 Type: SSH_FXP_OPEN, Size: 58, Number: 29443
+< 2019-10-25 12:55:27.236 Type: SSH_FXP_STATUS, Size: 17, Number: 29188
+. 2019-10-25 12:55:27.236 Discarding reserved response
+< 2019-10-25 12:55:27.374 Type: SSH_FXP_HANDLE, Size: 12, Number: 29443
+> 2019-10-25 12:55:27.374 Type: SSH_FXP_FSTAT, Size: 16, Number: 29704
+< 2019-10-25 12:55:27.473 Type: SSH_FXP_ATTRS, Size: 46, Number: 29704
+> 2019-10-25 12:55:27.473 Type: SSH_FXP_READ, Size: 24, Number: 29957
+< 2019-10-25 12:55:27.667 Status code: 1
+. 2019-10-25 12:55:27.667 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:27.667 Type: SSH_FXP_CLOSE, Size: 12, Number: 30468
+. 2019-10-25 12:55:27.667 Preserving timestamp [2019-09-23T23:23:02.000Z]
+. 2019-10-25 12:55:27.668 Transfer done: '/Inpatient/99940002__09232019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09232019_1809_1.txt' [3372]
+. 2019-10-25 12:55:27.669 Copying finished: Transferred: 213,286, Elapsed: 0:00:12, CPS: 16,307/s
+. 2019-10-25 12:55:27.669 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,583
+. 2019-10-25 12:55:27.669   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:27.669   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:27.669   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:27.669 File: '/Inpatient/99940002__09242019_1809_1.txt' [2019-09-24T23:22:53.000Z] [15583]
+. 2019-10-25 12:55:27.669 Copying "/Inpatient/99940002__09242019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:27.669 Binary transfer mode selected.
+. 2019-10-25 12:55:27.669 Opening remote file.
+> 2019-10-25 12:55:27.669 Type: SSH_FXP_OPEN, Size: 58, Number: 30723
+< 2019-10-25 12:55:27.767 Type: SSH_FXP_STATUS, Size: 17, Number: 30468
+. 2019-10-25 12:55:27.768 Discarding reserved response
+< 2019-10-25 12:55:27.916 Type: SSH_FXP_HANDLE, Size: 12, Number: 30723
+> 2019-10-25 12:55:27.916 Type: SSH_FXP_FSTAT, Size: 16, Number: 30984
+< 2019-10-25 12:55:28.018 Type: SSH_FXP_ATTRS, Size: 46, Number: 30984
+> 2019-10-25 12:55:28.020 Type: SSH_FXP_READ, Size: 24, Number: 31237
+< 2019-10-25 12:55:28.228 Status code: 1
+. 2019-10-25 12:55:28.228 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:28.228 Type: SSH_FXP_CLOSE, Size: 12, Number: 31748
+. 2019-10-25 12:55:28.228 Preserving timestamp [2019-09-24T23:22:53.000Z]
+. 2019-10-25 12:55:28.229 Transfer done: '/Inpatient/99940002__09242019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09242019_1809_1.txt' [15583]
+. 2019-10-25 12:55:28.229 Copying finished: Transferred: 228,869, Elapsed: 0:00:12, CPS: 16,926/s
+. 2019-10-25 12:55:28.229 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 7,586
+. 2019-10-25 12:55:28.229   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:28.229   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:28.229   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:28.229 File: '/Inpatient/99940002__09252019_1809_1.txt' [2019-09-25T23:23:42.000Z] [7586]
+. 2019-10-25 12:55:28.230 Copying "/Inpatient/99940002__09252019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:28.230 Binary transfer mode selected.
+. 2019-10-25 12:55:28.230 Opening remote file.
+> 2019-10-25 12:55:28.230 Type: SSH_FXP_OPEN, Size: 58, Number: 32003
+< 2019-10-25 12:55:28.330 Type: SSH_FXP_STATUS, Size: 17, Number: 31748
+. 2019-10-25 12:55:28.330 Discarding reserved response
+< 2019-10-25 12:55:28.462 Type: SSH_FXP_HANDLE, Size: 12, Number: 32003
+> 2019-10-25 12:55:28.462 Type: SSH_FXP_FSTAT, Size: 16, Number: 32264
+< 2019-10-25 12:55:28.562 Type: SSH_FXP_ATTRS, Size: 46, Number: 32264
+> 2019-10-25 12:55:28.563 Type: SSH_FXP_READ, Size: 24, Number: 32517
+< 2019-10-25 12:55:28.761 Status code: 1
+. 2019-10-25 12:55:28.761 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:28.761 Type: SSH_FXP_CLOSE, Size: 12, Number: 33028
+. 2019-10-25 12:55:28.761 Preserving timestamp [2019-09-25T23:23:42.000Z]
+. 2019-10-25 12:55:28.761 Transfer done: '/Inpatient/99940002__09252019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09252019_1809_1.txt' [7586]
+. 2019-10-25 12:55:28.762 Copying finished: Transferred: 236,455, Elapsed: 0:00:13, CPS: 16,235/s
+. 2019-10-25 12:55:28.762 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 16,035
+. 2019-10-25 12:55:28.762   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:28.762   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:28.762   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:28.762 File: '/Inpatient/99940002__09262019_1809_1.txt' [2019-09-26T23:22:41.000Z] [16035]
+. 2019-10-25 12:55:28.763 Copying "/Inpatient/99940002__09262019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:28.763 Binary transfer mode selected.
+. 2019-10-25 12:55:28.763 Opening remote file.
+> 2019-10-25 12:55:28.763 Type: SSH_FXP_OPEN, Size: 58, Number: 33283
+< 2019-10-25 12:55:28.864 Type: SSH_FXP_STATUS, Size: 17, Number: 33028
+. 2019-10-25 12:55:28.864 Discarding reserved response
+< 2019-10-25 12:55:29.002 Type: SSH_FXP_HANDLE, Size: 12, Number: 33283
+> 2019-10-25 12:55:29.003 Type: SSH_FXP_FSTAT, Size: 16, Number: 33544
+< 2019-10-25 12:55:29.104 Type: SSH_FXP_ATTRS, Size: 46, Number: 33544
+> 2019-10-25 12:55:29.104 Type: SSH_FXP_READ, Size: 24, Number: 33797
+< 2019-10-25 12:55:29.314 Status code: 1
+. 2019-10-25 12:55:29.314 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:29.314 Type: SSH_FXP_CLOSE, Size: 12, Number: 34308
+. 2019-10-25 12:55:29.314 Preserving timestamp [2019-09-26T23:22:41.000Z]
+. 2019-10-25 12:55:29.315 Transfer done: '/Inpatient/99940002__09262019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09262019_1809_1.txt' [16035]
+. 2019-10-25 12:55:29.316 Copying finished: Transferred: 252,490, Elapsed: 0:00:13, CPS: 16,921/s
+. 2019-10-25 12:55:29.317 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 5,215
+. 2019-10-25 12:55:29.317   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:29.317   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:29.317   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:29.317 File: '/Inpatient/99940002__09272019_1809_1.txt' [2019-09-27T23:23:20.000Z] [5215]
+. 2019-10-25 12:55:29.318 Copying "/Inpatient/99940002__09272019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:29.318 Binary transfer mode selected.
+. 2019-10-25 12:55:29.318 Opening remote file.
+> 2019-10-25 12:55:29.318 Type: SSH_FXP_OPEN, Size: 58, Number: 34563
+< 2019-10-25 12:55:29.420 Type: SSH_FXP_STATUS, Size: 17, Number: 34308
+. 2019-10-25 12:55:29.420 Discarding reserved response
+< 2019-10-25 12:55:29.543 Type: SSH_FXP_HANDLE, Size: 12, Number: 34563
+> 2019-10-25 12:55:29.543 Type: SSH_FXP_FSTAT, Size: 16, Number: 34824
+< 2019-10-25 12:55:29.640 Type: SSH_FXP_ATTRS, Size: 46, Number: 34824
+> 2019-10-25 12:55:29.643 Type: SSH_FXP_READ, Size: 24, Number: 35077
+< 2019-10-25 12:55:29.836 Status code: 1
+. 2019-10-25 12:55:29.836 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:29.836 Type: SSH_FXP_CLOSE, Size: 12, Number: 35588
+. 2019-10-25 12:55:29.836 Preserving timestamp [2019-09-27T23:23:20.000Z]
+. 2019-10-25 12:55:29.836 Transfer done: '/Inpatient/99940002__09272019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09272019_1809_1.txt' [5215]
+. 2019-10-25 12:55:29.837 Copying finished: Transferred: 257,705, Elapsed: 0:00:14, CPS: 17,638/s
+. 2019-10-25 12:55:29.837 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 17,743
+. 2019-10-25 12:55:29.837   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:29.837   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:29.837   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:29.837 File: '/Inpatient/99940002__09302019_1809_1.txt' [2019-09-30T23:23:58.000Z] [17743]
+. 2019-10-25 12:55:29.837 Copying "/Inpatient/99940002__09302019_1809_1.txt" to local directory started.
+. 2019-10-25 12:55:29.838 Binary transfer mode selected.
+. 2019-10-25 12:55:29.838 Opening remote file.
+> 2019-10-25 12:55:29.838 Type: SSH_FXP_OPEN, Size: 58, Number: 35843
+< 2019-10-25 12:55:29.943 Type: SSH_FXP_STATUS, Size: 17, Number: 35588
+. 2019-10-25 12:55:29.944 Discarding reserved response
+< 2019-10-25 12:55:30.075 Type: SSH_FXP_HANDLE, Size: 12, Number: 35843
+> 2019-10-25 12:55:30.075 Type: SSH_FXP_FSTAT, Size: 16, Number: 36104
+< 2019-10-25 12:55:30.175 Type: SSH_FXP_ATTRS, Size: 46, Number: 36104
+> 2019-10-25 12:55:30.177 Type: SSH_FXP_READ, Size: 24, Number: 36357
+< 2019-10-25 12:55:30.398 Status code: 1
+. 2019-10-25 12:55:30.398 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:30.398 Type: SSH_FXP_CLOSE, Size: 12, Number: 36868
+. 2019-10-25 12:55:30.399 Preserving timestamp [2019-09-30T23:23:58.000Z]
+. 2019-10-25 12:55:30.400 Transfer done: '/Inpatient/99940002__09302019_1809_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__09302019_1809_1.txt' [17743]
+. 2019-10-25 12:55:30.401 Copying finished: Transferred: 275,448, Elapsed: 0:00:15, CPS: 18,384/s
+. 2019-10-25 12:55:30.401 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 4,617
+. 2019-10-25 12:55:30.401   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:30.402   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:30.402   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:30.402 File: '/Inpatient/99940002__10012019_1810_1.txt' [2019-10-01T23:23:26.000Z] [4617]
+. 2019-10-25 12:55:30.402 Copying "/Inpatient/99940002__10012019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:30.403 Binary transfer mode selected.
+. 2019-10-25 12:55:30.403 Opening remote file.
+> 2019-10-25 12:55:30.403 Type: SSH_FXP_OPEN, Size: 58, Number: 37123
+< 2019-10-25 12:55:30.498 Type: SSH_FXP_STATUS, Size: 17, Number: 36868
+. 2019-10-25 12:55:30.498 Discarding reserved response
+< 2019-10-25 12:55:30.636 Type: SSH_FXP_HANDLE, Size: 12, Number: 37123
+> 2019-10-25 12:55:30.636 Type: SSH_FXP_FSTAT, Size: 16, Number: 37384
+< 2019-10-25 12:55:30.735 Type: SSH_FXP_ATTRS, Size: 46, Number: 37384
+> 2019-10-25 12:55:30.736 Type: SSH_FXP_READ, Size: 24, Number: 37637
+< 2019-10-25 12:55:30.928 Status code: 1
+. 2019-10-25 12:55:30.928 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:30.928 Type: SSH_FXP_CLOSE, Size: 12, Number: 38148
+. 2019-10-25 12:55:30.928 Preserving timestamp [2019-10-01T23:23:26.000Z]
+. 2019-10-25 12:55:30.928 Transfer done: '/Inpatient/99940002__10012019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10012019_1810_1.txt' [4617]
+. 2019-10-25 12:55:30.929 Copying finished: Transferred: 280,065, Elapsed: 0:00:15, CPS: 18,824/s
+. 2019-10-25 12:55:30.929 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 21,403
+. 2019-10-25 12:55:30.929   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:30.929   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:30.929   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:30.929 File: '/Inpatient/99940002__10022019_1810_1.txt' [2019-10-02T23:23:29.000Z] [21403]
+. 2019-10-25 12:55:30.930 Copying "/Inpatient/99940002__10022019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:30.930 Binary transfer mode selected.
+. 2019-10-25 12:55:30.930 Opening remote file.
+> 2019-10-25 12:55:30.930 Type: SSH_FXP_OPEN, Size: 58, Number: 38403
+< 2019-10-25 12:55:31.029 Type: SSH_FXP_STATUS, Size: 17, Number: 38148
+. 2019-10-25 12:55:31.029 Discarding reserved response
+< 2019-10-25 12:55:31.161 Type: SSH_FXP_HANDLE, Size: 12, Number: 38403
+> 2019-10-25 12:55:31.161 Type: SSH_FXP_FSTAT, Size: 16, Number: 38664
+< 2019-10-25 12:55:31.262 Type: SSH_FXP_ATTRS, Size: 46, Number: 38664
+> 2019-10-25 12:55:31.263 Type: SSH_FXP_READ, Size: 24, Number: 38917
+< 2019-10-25 12:55:31.487 Status code: 1
+. 2019-10-25 12:55:31.487 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:31.487 Type: SSH_FXP_CLOSE, Size: 12, Number: 39428
+. 2019-10-25 12:55:31.487 Preserving timestamp [2019-10-02T23:23:29.000Z]
+. 2019-10-25 12:55:31.487 Transfer done: '/Inpatient/99940002__10022019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10022019_1810_1.txt' [21403]
+. 2019-10-25 12:55:31.488 Copying finished: Transferred: 301,468, Elapsed: 0:00:16, CPS: 19,883/s
+. 2019-10-25 12:55:31.488 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 5,322
+. 2019-10-25 12:55:31.488   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:31.488   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:31.488   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:31.488 File: '/Inpatient/99940002__10032019_1810_1.txt' [2019-10-03T23:24:12.000Z] [5322]
+. 2019-10-25 12:55:31.489 Copying "/Inpatient/99940002__10032019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:31.489 Binary transfer mode selected.
+. 2019-10-25 12:55:31.489 Opening remote file.
+> 2019-10-25 12:55:31.489 Type: SSH_FXP_OPEN, Size: 58, Number: 39683
+< 2019-10-25 12:55:31.600 Type: SSH_FXP_STATUS, Size: 17, Number: 39428
+. 2019-10-25 12:55:31.600 Discarding reserved response
+< 2019-10-25 12:55:31.737 Type: SSH_FXP_HANDLE, Size: 12, Number: 39683
+> 2019-10-25 12:55:31.737 Type: SSH_FXP_FSTAT, Size: 16, Number: 39944
+< 2019-10-25 12:55:31.838 Type: SSH_FXP_ATTRS, Size: 46, Number: 39944
+> 2019-10-25 12:55:31.839 Type: SSH_FXP_READ, Size: 24, Number: 40197
+< 2019-10-25 12:55:32.037 Status code: 1
+. 2019-10-25 12:55:32.037 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:32.037 Type: SSH_FXP_CLOSE, Size: 12, Number: 40708
+. 2019-10-25 12:55:32.037 Preserving timestamp [2019-10-03T23:24:12.000Z]
+. 2019-10-25 12:55:32.038 Transfer done: '/Inpatient/99940002__10032019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10032019_1810_1.txt' [5322]
+. 2019-10-25 12:55:32.040 Copying finished: Transferred: 306,790, Elapsed: 0:00:16, CPS: 20,565/s
+. 2019-10-25 12:55:32.040 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 16,926
+. 2019-10-25 12:55:32.040   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:32.040   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:32.040   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:32.040 File: '/Inpatient/99940002__10042019_1810_1.txt' [2019-10-04T23:22:37.000Z] [16926]
+. 2019-10-25 12:55:32.041 Copying "/Inpatient/99940002__10042019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:32.041 Binary transfer mode selected.
+. 2019-10-25 12:55:32.042 Opening remote file.
+> 2019-10-25 12:55:32.042 Type: SSH_FXP_OPEN, Size: 58, Number: 40963
+< 2019-10-25 12:55:32.139 Type: SSH_FXP_STATUS, Size: 17, Number: 40708
+. 2019-10-25 12:55:32.139 Discarding reserved response
+< 2019-10-25 12:55:32.263 Type: SSH_FXP_HANDLE, Size: 12, Number: 40963
+> 2019-10-25 12:55:32.263 Type: SSH_FXP_FSTAT, Size: 16, Number: 41224
+< 2019-10-25 12:55:32.362 Type: SSH_FXP_ATTRS, Size: 46, Number: 41224
+> 2019-10-25 12:55:32.364 Type: SSH_FXP_READ, Size: 24, Number: 41477
+< 2019-10-25 12:55:32.653 Status code: 1
+. 2019-10-25 12:55:32.653 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:32.653 Type: SSH_FXP_CLOSE, Size: 12, Number: 41988
+. 2019-10-25 12:55:32.653 Preserving timestamp [2019-10-04T23:22:37.000Z]
+. 2019-10-25 12:55:32.655 Transfer done: '/Inpatient/99940002__10042019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10042019_1810_1.txt' [16926]
+. 2019-10-25 12:55:32.655 Copying finished: Transferred: 323,716, Elapsed: 0:00:17, CPS: 20,981/s
+. 2019-10-25 12:55:32.656 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 7,742
+. 2019-10-25 12:55:32.656   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:32.656   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:32.656   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:32.656 File: '/Inpatient/99940002__10072019_1810_1.txt' [2019-10-07T23:24:09.000Z] [7742]
+. 2019-10-25 12:55:32.657 Copying "/Inpatient/99940002__10072019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:32.657 Binary transfer mode selected.
+. 2019-10-25 12:55:32.657 Opening remote file.
+> 2019-10-25 12:55:32.657 Type: SSH_FXP_OPEN, Size: 58, Number: 42243
+< 2019-10-25 12:55:32.748 Type: SSH_FXP_STATUS, Size: 17, Number: 41988
+. 2019-10-25 12:55:32.748 Discarding reserved response
+< 2019-10-25 12:55:32.881 Type: SSH_FXP_HANDLE, Size: 12, Number: 42243
+> 2019-10-25 12:55:32.881 Type: SSH_FXP_FSTAT, Size: 16, Number: 42504
+< 2019-10-25 12:55:32.983 Type: SSH_FXP_ATTRS, Size: 46, Number: 42504
+> 2019-10-25 12:55:32.985 Type: SSH_FXP_READ, Size: 24, Number: 42757
+< 2019-10-25 12:55:33.190 Status code: 1
+. 2019-10-25 12:55:33.190 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:33.190 Type: SSH_FXP_CLOSE, Size: 12, Number: 43268
+. 2019-10-25 12:55:33.190 Preserving timestamp [2019-10-07T23:24:09.000Z]
+. 2019-10-25 12:55:33.190 Transfer done: '/Inpatient/99940002__10072019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10072019_1810_1.txt' [7742]
+. 2019-10-25 12:55:33.191 Copying finished: Transferred: 331,458, Elapsed: 0:00:17, CPS: 19,950/s
+. 2019-10-25 12:55:33.191 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 19,343
+. 2019-10-25 12:55:33.191   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:33.191   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:33.191   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:33.191 File: '/Inpatient/99940002__10082019_1810_1.txt' [2019-10-08T23:23:39.000Z] [19343]
+. 2019-10-25 12:55:33.192 Copying "/Inpatient/99940002__10082019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:33.192 Binary transfer mode selected.
+. 2019-10-25 12:55:33.192 Opening remote file.
+> 2019-10-25 12:55:33.192 Type: SSH_FXP_OPEN, Size: 58, Number: 43523
+< 2019-10-25 12:55:33.288 Type: SSH_FXP_STATUS, Size: 17, Number: 43268
+. 2019-10-25 12:55:33.289 Discarding reserved response
+< 2019-10-25 12:55:33.432 Type: SSH_FXP_HANDLE, Size: 12, Number: 43523
+> 2019-10-25 12:55:33.432 Type: SSH_FXP_FSTAT, Size: 16, Number: 43784
+< 2019-10-25 12:55:33.537 Type: SSH_FXP_ATTRS, Size: 46, Number: 43784
+> 2019-10-25 12:55:33.538 Type: SSH_FXP_READ, Size: 24, Number: 44037
+< 2019-10-25 12:55:34.225 Status code: 1
+. 2019-10-25 12:55:34.225 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:34.225 Type: SSH_FXP_CLOSE, Size: 12, Number: 44548
+. 2019-10-25 12:55:34.225 Preserving timestamp [2019-10-08T23:23:39.000Z]
+. 2019-10-25 12:55:34.226 Transfer done: '/Inpatient/99940002__10082019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10082019_1810_1.txt' [19343]
+. 2019-10-25 12:55:34.227 Copying finished: Transferred: 350,801, Elapsed: 0:00:18, CPS: 20,115/s
+. 2019-10-25 12:55:34.227 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,070
+. 2019-10-25 12:55:34.227   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:34.227   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:34.227   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:34.229 File: '/Inpatient/99940002__10092019_1810_1.txt' [2019-10-09T23:23:33.000Z] [14070]
+. 2019-10-25 12:55:34.229 Copying "/Inpatient/99940002__10092019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:34.229 Binary transfer mode selected.
+. 2019-10-25 12:55:34.229 Opening remote file.
+> 2019-10-25 12:55:34.229 Type: SSH_FXP_OPEN, Size: 58, Number: 44803
+< 2019-10-25 12:55:34.322 Type: SSH_FXP_STATUS, Size: 17, Number: 44548
+. 2019-10-25 12:55:34.322 Discarding reserved response
+< 2019-10-25 12:55:34.452 Type: SSH_FXP_HANDLE, Size: 12, Number: 44803
+> 2019-10-25 12:55:34.452 Type: SSH_FXP_FSTAT, Size: 16, Number: 45064
+< 2019-10-25 12:55:34.555 Type: SSH_FXP_ATTRS, Size: 46, Number: 45064
+> 2019-10-25 12:55:34.557 Type: SSH_FXP_READ, Size: 24, Number: 45317
+< 2019-10-25 12:55:35.060 Status code: 1
+. 2019-10-25 12:55:35.060 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:35.060 Type: SSH_FXP_CLOSE, Size: 12, Number: 45828
+. 2019-10-25 12:55:35.060 Preserving timestamp [2019-10-09T23:23:33.000Z]
+. 2019-10-25 12:55:35.061 Transfer done: '/Inpatient/99940002__10092019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10092019_1810_1.txt' [14070]
+. 2019-10-25 12:55:35.063 Copying finished: Transferred: 364,871, Elapsed: 0:00:19, CPS: 19,875/s
+. 2019-10-25 12:55:35.063 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,216
+. 2019-10-25 12:55:35.063   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:35.063   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:35.063   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:35.063 File: '/Inpatient/99940002__10102019_1810_1.txt' [2019-10-10T23:25:33.000Z] [15216]
+. 2019-10-25 12:55:35.064 Copying "/Inpatient/99940002__10102019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:35.064 Binary transfer mode selected.
+. 2019-10-25 12:55:35.064 Opening remote file.
+> 2019-10-25 12:55:35.064 Type: SSH_FXP_OPEN, Size: 58, Number: 46083
+< 2019-10-25 12:55:35.160 Type: SSH_FXP_STATUS, Size: 17, Number: 45828
+. 2019-10-25 12:55:35.160 Discarding reserved response
+< 2019-10-25 12:55:35.293 Type: SSH_FXP_HANDLE, Size: 12, Number: 46083
+> 2019-10-25 12:55:35.293 Type: SSH_FXP_FSTAT, Size: 16, Number: 46344
+< 2019-10-25 12:55:35.395 Type: SSH_FXP_ATTRS, Size: 46, Number: 46344
+> 2019-10-25 12:55:35.396 Type: SSH_FXP_READ, Size: 24, Number: 46597
+< 2019-10-25 12:55:35.611 Status code: 1
+. 2019-10-25 12:55:35.611 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:35.611 Type: SSH_FXP_CLOSE, Size: 12, Number: 47108
+. 2019-10-25 12:55:35.611 Preserving timestamp [2019-10-10T23:25:33.000Z]
+. 2019-10-25 12:55:35.611 Transfer done: '/Inpatient/99940002__10102019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10102019_1810_1.txt' [15216]
+. 2019-10-25 12:55:35.612 Copying finished: Transferred: 380,087, Elapsed: 0:00:20, CPS: 20,300/s
+. 2019-10-25 12:55:35.612 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 9,881
+. 2019-10-25 12:55:35.612   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:35.612   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:35.612   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:35.612 File: '/Inpatient/99940002__10112019_1810_1.txt' [2019-10-11T23:23:59.000Z] [9881]
+. 2019-10-25 12:55:35.613 Copying "/Inpatient/99940002__10112019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:35.613 Binary transfer mode selected.
+. 2019-10-25 12:55:35.613 Opening remote file.
+> 2019-10-25 12:55:35.613 Type: SSH_FXP_OPEN, Size: 58, Number: 47363
+< 2019-10-25 12:55:35.748 Type: SSH_FXP_STATUS, Size: 17, Number: 47108
+. 2019-10-25 12:55:35.748 Discarding reserved response
+< 2019-10-25 12:55:35.887 Type: SSH_FXP_HANDLE, Size: 12, Number: 47363
+> 2019-10-25 12:55:35.887 Type: SSH_FXP_FSTAT, Size: 16, Number: 47624
+< 2019-10-25 12:55:35.989 Type: SSH_FXP_ATTRS, Size: 46, Number: 47624
+> 2019-10-25 12:55:35.989 Type: SSH_FXP_READ, Size: 24, Number: 47877
+< 2019-10-25 12:55:36.221 Status code: 1
+. 2019-10-25 12:55:36.221 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:36.221 Type: SSH_FXP_CLOSE, Size: 12, Number: 48388
+. 2019-10-25 12:55:36.221 Preserving timestamp [2019-10-11T23:23:59.000Z]
+. 2019-10-25 12:55:36.221 Transfer done: '/Inpatient/99940002__10112019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10112019_1810_1.txt' [9881]
+. 2019-10-25 12:55:36.222 Copying finished: Transferred: 389,968, Elapsed: 0:00:20, CPS: 20,071/s
+. 2019-10-25 12:55:36.222 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,180
+. 2019-10-25 12:55:36.222   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:36.222   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:36.222   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:36.222 File: '/Inpatient/99940002__10142019_1810_1.txt' [2019-10-14T23:23:05.000Z] [14180]
+. 2019-10-25 12:55:36.222 Copying "/Inpatient/99940002__10142019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:36.222 Binary transfer mode selected.
+. 2019-10-25 12:55:36.223 Opening remote file.
+> 2019-10-25 12:55:36.223 Type: SSH_FXP_OPEN, Size: 58, Number: 48643
+< 2019-10-25 12:55:36.325 Type: SSH_FXP_STATUS, Size: 17, Number: 48388
+. 2019-10-25 12:55:36.325 Discarding reserved response
+< 2019-10-25 12:55:36.480 Type: SSH_FXP_HANDLE, Size: 12, Number: 48643
+> 2019-10-25 12:55:36.480 Type: SSH_FXP_FSTAT, Size: 16, Number: 48904
+< 2019-10-25 12:55:36.588 Type: SSH_FXP_ATTRS, Size: 46, Number: 48904
+> 2019-10-25 12:55:36.590 Type: SSH_FXP_READ, Size: 24, Number: 49157
+< 2019-10-25 12:55:36.799 Status code: 1
+. 2019-10-25 12:55:36.799 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:36.799 Type: SSH_FXP_CLOSE, Size: 12, Number: 49668
+. 2019-10-25 12:55:36.799 Preserving timestamp [2019-10-14T23:23:05.000Z]
+. 2019-10-25 12:55:36.799 Transfer done: '/Inpatient/99940002__10142019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10142019_1810_1.txt' [14180]
+. 2019-10-25 12:55:36.800 Copying finished: Transferred: 404,148, Elapsed: 0:00:21, CPS: 20,585/s
+. 2019-10-25 12:55:36.800 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 10,081
+. 2019-10-25 12:55:36.800   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:36.800   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:36.800   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:36.800 File: '/Inpatient/99940002__10152019_1810_1.txt' [2019-10-15T23:23:07.000Z] [10081]
+. 2019-10-25 12:55:36.802 Copying "/Inpatient/99940002__10152019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:36.802 Binary transfer mode selected.
+. 2019-10-25 12:55:36.802 Opening remote file.
+> 2019-10-25 12:55:36.802 Type: SSH_FXP_OPEN, Size: 58, Number: 49923
+< 2019-10-25 12:55:36.899 Type: SSH_FXP_STATUS, Size: 17, Number: 49668
+. 2019-10-25 12:55:36.899 Discarding reserved response
+< 2019-10-25 12:55:37.066 Type: SSH_FXP_HANDLE, Size: 12, Number: 49923
+> 2019-10-25 12:55:37.067 Type: SSH_FXP_FSTAT, Size: 16, Number: 50184
+< 2019-10-25 12:55:37.178 Type: SSH_FXP_ATTRS, Size: 46, Number: 50184
+> 2019-10-25 12:55:37.180 Type: SSH_FXP_READ, Size: 24, Number: 50437
+< 2019-10-25 12:55:37.384 Status code: 1
+. 2019-10-25 12:55:37.384 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:37.384 Type: SSH_FXP_CLOSE, Size: 12, Number: 50948
+. 2019-10-25 12:55:37.385 Preserving timestamp [2019-10-15T23:23:07.000Z]
+. 2019-10-25 12:55:37.386 Transfer done: '/Inpatient/99940002__10152019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10152019_1810_1.txt' [10081]
+. 2019-10-25 12:55:37.387 Copying finished: Transferred: 414,229, Elapsed: 0:00:22, CPS: 20,390/s
+. 2019-10-25 12:55:37.387 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 16,221
+. 2019-10-25 12:55:37.387   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:37.387   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:37.388   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:37.388 File: '/Inpatient/99940002__10162019_1810_1.txt' [2019-10-16T23:24:57.000Z] [16221]
+. 2019-10-25 12:55:37.388 Copying "/Inpatient/99940002__10162019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:37.388 Binary transfer mode selected.
+. 2019-10-25 12:55:37.389 Opening remote file.
+> 2019-10-25 12:55:37.389 Type: SSH_FXP_OPEN, Size: 58, Number: 51203
+< 2019-10-25 12:55:37.493 Type: SSH_FXP_STATUS, Size: 17, Number: 50948
+. 2019-10-25 12:55:37.493 Discarding reserved response
+< 2019-10-25 12:55:37.626 Type: SSH_FXP_HANDLE, Size: 12, Number: 51203
+> 2019-10-25 12:55:37.626 Type: SSH_FXP_FSTAT, Size: 16, Number: 51464
+< 2019-10-25 12:55:37.731 Type: SSH_FXP_ATTRS, Size: 46, Number: 51464
+> 2019-10-25 12:55:37.731 Type: SSH_FXP_READ, Size: 24, Number: 51717
+< 2019-10-25 12:55:37.944 Status code: 1
+. 2019-10-25 12:55:37.944 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:37.944 Type: SSH_FXP_CLOSE, Size: 12, Number: 52228
+. 2019-10-25 12:55:37.944 Preserving timestamp [2019-10-16T23:24:57.000Z]
+. 2019-10-25 12:55:37.944 Transfer done: '/Inpatient/99940002__10162019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10162019_1810_1.txt' [16221]
+. 2019-10-25 12:55:37.945 Copying finished: Transferred: 430,450, Elapsed: 0:00:22, CPS: 20,931/s
+. 2019-10-25 12:55:37.945 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 10,206
+. 2019-10-25 12:55:37.945   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:37.945   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:37.945   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:37.945 File: '/Inpatient/99940002__10172019_1810_1.txt' [2019-10-17T23:23:42.000Z] [10206]
+. 2019-10-25 12:55:37.946 Copying "/Inpatient/99940002__10172019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:37.946 Binary transfer mode selected.
+. 2019-10-25 12:55:37.946 Opening remote file.
+> 2019-10-25 12:55:37.946 Type: SSH_FXP_OPEN, Size: 58, Number: 52483
+< 2019-10-25 12:55:38.057 Type: SSH_FXP_STATUS, Size: 17, Number: 52228
+. 2019-10-25 12:55:38.057 Discarding reserved response
+< 2019-10-25 12:55:38.209 Type: SSH_FXP_HANDLE, Size: 12, Number: 52483
+> 2019-10-25 12:55:38.210 Type: SSH_FXP_FSTAT, Size: 16, Number: 52744
+< 2019-10-25 12:55:38.314 Type: SSH_FXP_ATTRS, Size: 46, Number: 52744
+> 2019-10-25 12:55:38.315 Type: SSH_FXP_READ, Size: 24, Number: 52997
+< 2019-10-25 12:55:38.524 Status code: 1
+. 2019-10-25 12:55:38.524 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:38.524 Type: SSH_FXP_CLOSE, Size: 12, Number: 53508
+. 2019-10-25 12:55:38.524 Preserving timestamp [2019-10-17T23:23:42.000Z]
+. 2019-10-25 12:55:38.525 Transfer done: '/Inpatient/99940002__10172019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10172019_1810_1.txt' [10206]
+. 2019-10-25 12:55:38.526 Copying finished: Transferred: 440,656, Elapsed: 0:00:23, CPS: 20,758/s
+. 2019-10-25 12:55:38.526 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 15,747
+. 2019-10-25 12:55:38.526   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:38.526   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:38.526   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:38.526 File: '/Inpatient/99940002__10182019_1810_1.txt' [2019-10-18T23:23:50.000Z] [15747]
+. 2019-10-25 12:55:38.527 Copying "/Inpatient/99940002__10182019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:38.527 Binary transfer mode selected.
+. 2019-10-25 12:55:38.528 Opening remote file.
+> 2019-10-25 12:55:38.528 Type: SSH_FXP_OPEN, Size: 58, Number: 53763
+< 2019-10-25 12:55:38.631 Type: SSH_FXP_STATUS, Size: 17, Number: 53508
+. 2019-10-25 12:55:38.631 Discarding reserved response
+< 2019-10-25 12:55:38.780 Type: SSH_FXP_HANDLE, Size: 12, Number: 53763
+> 2019-10-25 12:55:38.780 Type: SSH_FXP_FSTAT, Size: 16, Number: 54024
+< 2019-10-25 12:55:38.880 Type: SSH_FXP_ATTRS, Size: 46, Number: 54024
+> 2019-10-25 12:55:38.881 Type: SSH_FXP_READ, Size: 24, Number: 54277
+< 2019-10-25 12:55:39.106 Status code: 1
+. 2019-10-25 12:55:39.106 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:39.106 Type: SSH_FXP_CLOSE, Size: 12, Number: 54788
+. 2019-10-25 12:55:39.106 Preserving timestamp [2019-10-18T23:23:50.000Z]
+. 2019-10-25 12:55:39.107 Transfer done: '/Inpatient/99940002__10182019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10182019_1810_1.txt' [15747]
+. 2019-10-25 12:55:39.108 Copying finished: Transferred: 456,403, Elapsed: 0:00:23, CPS: 21,073/s
+. 2019-10-25 12:55:39.109 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,865
+. 2019-10-25 12:55:39.109   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:39.109   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:39.109   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:39.109 File: '/Inpatient/99940002__10212019_1810_1.txt' [2019-10-21T23:23:40.000Z] [14865]
+. 2019-10-25 12:55:39.110 Copying "/Inpatient/99940002__10212019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:39.110 Binary transfer mode selected.
+. 2019-10-25 12:55:39.110 Opening remote file.
+> 2019-10-25 12:55:39.110 Type: SSH_FXP_OPEN, Size: 58, Number: 55043
+< 2019-10-25 12:55:39.217 Type: SSH_FXP_STATUS, Size: 17, Number: 54788
+. 2019-10-25 12:55:39.217 Discarding reserved response
+< 2019-10-25 12:55:39.358 Type: SSH_FXP_HANDLE, Size: 12, Number: 55043
+> 2019-10-25 12:55:39.358 Type: SSH_FXP_FSTAT, Size: 16, Number: 55304
+< 2019-10-25 12:55:39.463 Type: SSH_FXP_ATTRS, Size: 46, Number: 55304
+> 2019-10-25 12:55:39.465 Type: SSH_FXP_READ, Size: 24, Number: 55557
+< 2019-10-25 12:55:39.676 Status code: 1
+. 2019-10-25 12:55:39.676 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:39.676 Type: SSH_FXP_CLOSE, Size: 12, Number: 56068
+. 2019-10-25 12:55:39.677 Preserving timestamp [2019-10-21T23:23:40.000Z]
+. 2019-10-25 12:55:39.678 Transfer done: '/Inpatient/99940002__10212019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10212019_1810_1.txt' [14865]
+. 2019-10-25 12:55:39.679 Copying finished: Transferred: 471,268, Elapsed: 0:00:24, CPS: 21,317/s
+. 2019-10-25 12:55:39.679 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 24,725
+. 2019-10-25 12:55:39.679   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:39.679   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:39.680   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:39.680 File: '/Inpatient/99940002__10222019_1810_1.txt' [2019-10-22T23:23:55.000Z] [24725]
+. 2019-10-25 12:55:39.681 Copying "/Inpatient/99940002__10222019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:39.681 Binary transfer mode selected.
+. 2019-10-25 12:55:39.681 Opening remote file.
+> 2019-10-25 12:55:39.681 Type: SSH_FXP_OPEN, Size: 58, Number: 56323
+< 2019-10-25 12:55:39.793 Type: SSH_FXP_STATUS, Size: 17, Number: 56068
+. 2019-10-25 12:55:39.793 Discarding reserved response
+< 2019-10-25 12:55:39.940 Type: SSH_FXP_HANDLE, Size: 12, Number: 56323
+> 2019-10-25 12:55:39.940 Type: SSH_FXP_FSTAT, Size: 16, Number: 56584
+< 2019-10-25 12:55:40.048 Type: SSH_FXP_ATTRS, Size: 46, Number: 56584
+> 2019-10-25 12:55:40.052 Type: SSH_FXP_READ, Size: 24, Number: 56837
+< 2019-10-25 12:55:40.273 Status code: 1
+. 2019-10-25 12:55:40.273 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:40.273 Type: SSH_FXP_CLOSE, Size: 12, Number: 57348
+. 2019-10-25 12:55:40.273 Preserving timestamp [2019-10-22T23:23:55.000Z]
+. 2019-10-25 12:55:40.273 Transfer done: '/Inpatient/99940002__10222019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10222019_1810_1.txt' [24725]
+. 2019-10-25 12:55:40.274 Copying finished: Transferred: 495,993, Elapsed: 0:00:24, CPS: 22,627/s
+. 2019-10-25 12:55:40.274 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,392
+. 2019-10-25 12:55:40.274   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:40.274   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:40.274   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:40.274 File: '/Inpatient/99940002__10232019_1810_1.txt' [2019-10-23T23:23:29.000Z] [14392]
+. 2019-10-25 12:55:40.274 Copying "/Inpatient/99940002__10232019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:40.274 Binary transfer mode selected.
+. 2019-10-25 12:55:40.274 Opening remote file.
+> 2019-10-25 12:55:40.274 Type: SSH_FXP_OPEN, Size: 58, Number: 57603
+< 2019-10-25 12:55:40.374 Type: SSH_FXP_STATUS, Size: 17, Number: 57348
+. 2019-10-25 12:55:40.374 Discarding reserved response
+< 2019-10-25 12:55:40.519 Type: SSH_FXP_HANDLE, Size: 12, Number: 57603
+> 2019-10-25 12:55:40.519 Type: SSH_FXP_FSTAT, Size: 16, Number: 57864
+< 2019-10-25 12:55:40.624 Type: SSH_FXP_ATTRS, Size: 46, Number: 57864
+> 2019-10-25 12:55:40.626 Type: SSH_FXP_READ, Size: 24, Number: 58117
+< 2019-10-25 12:55:40.830 Status code: 1
+. 2019-10-25 12:55:40.830 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:40.830 Type: SSH_FXP_CLOSE, Size: 12, Number: 58628
+. 2019-10-25 12:55:40.830 Preserving timestamp [2019-10-23T23:23:29.000Z]
+. 2019-10-25 12:55:40.831 Transfer done: '/Inpatient/99940002__10232019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10232019_1810_1.txt' [14392]
+. 2019-10-25 12:55:40.831 Copying finished: Transferred: 510,385, Elapsed: 0:00:25, CPS: 22,809/s
+. 2019-10-25 12:55:40.831 Copying 1 files/directories to local directory "C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\" - total size: 14,873
+. 2019-10-25 12:55:40.831   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2019-10-25 12:55:40.831   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2019-10-25 12:55:40.831   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-10-25 12:55:40.832 File: '/Inpatient/99940002__10242019_1810_1.txt' [2019-10-24T23:23:52.000Z] [14873]
+. 2019-10-25 12:55:40.832 Copying "/Inpatient/99940002__10242019_1810_1.txt" to local directory started.
+. 2019-10-25 12:55:40.832 Binary transfer mode selected.
+. 2019-10-25 12:55:40.832 Opening remote file.
+> 2019-10-25 12:55:40.832 Type: SSH_FXP_OPEN, Size: 58, Number: 58883
+< 2019-10-25 12:55:40.937 Type: SSH_FXP_STATUS, Size: 17, Number: 58628
+. 2019-10-25 12:55:40.937 Discarding reserved response
+< 2019-10-25 12:55:41.073 Type: SSH_FXP_HANDLE, Size: 12, Number: 58883
+> 2019-10-25 12:55:41.074 Type: SSH_FXP_FSTAT, Size: 16, Number: 59144
+< 2019-10-25 12:55:41.181 Type: SSH_FXP_ATTRS, Size: 46, Number: 59144
+> 2019-10-25 12:55:41.181 Type: SSH_FXP_READ, Size: 24, Number: 59397
+< 2019-10-25 12:55:41.388 Status code: 1
+. 2019-10-25 12:55:41.388 3 skipped SSH_FXP_WRITE, SSH_FXP_READ, SSH_FXP_DATA and SSH_FXP_STATUS packets.
+> 2019-10-25 12:55:41.388 Type: SSH_FXP_CLOSE, Size: 12, Number: 59908
+. 2019-10-25 12:55:41.389 Preserving timestamp [2019-10-24T23:23:52.000Z]
+. 2019-10-25 12:55:41.389 Transfer done: '/Inpatient/99940002__10242019_1810_1.txt' => 'C:\Users\Jhernan0\Desktop\Code Projects\InpatientData\R2\99940002__10242019_1810_1.txt' [14873]
+. 2019-10-25 12:55:41.389 Copying finished: Transferred: 525,258, Elapsed: 0:00:26, CPS: 23,247/s
+> 2019-10-25 12:55:41.390 Script: exit
+. 2019-10-25 12:55:41.391 Script: Exit code: 0
+. 2019-10-25 12:55:41.391 Closing connection.
+. 2019-10-25 12:55:41.391 Sending special code: 12
+. 2019-10-25 12:55:41.391 Sent EOF message
